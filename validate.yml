@@ -1,0 +1,23 @@
+name: Validate JSON
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Validate JSON
+      run: |
+        python -m json.tool radicals_data.json > /dev/null && echo "✓ JSON is valid"
+      
+    - name: Check file exists
+      run: |
+        [ -f "index.html" ] && echo "✓ index.html exists"
+        [ -f "radicals_data.json" ] && echo "✓ radicals_data.json exists"
+        [ -f "README.md" ] && echo "✓ README.md exists"

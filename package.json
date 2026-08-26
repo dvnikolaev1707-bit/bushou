@@ -1,0 +1,32 @@
+{
+  "name": "bushou",
+  "version": "1.0.0",
+  "description": "Interactive app for learning 214 Chinese Kangxi radicals with animations and spaced repetition",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server",
+    "build": "echo 'No build step required'",
+    "test": "echo 'Tests coming soon'"
+  },
+  "keywords": [
+    "chinese",
+    "radicals",
+    "kangxi",
+    "learning",
+    "interactive",
+    "spaced-repetition",
+    "hanzi",
+    "ierogrifi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/bushou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/bushou/issues"
+  },
+  "homepage": "https://yourusername.github.io/bushou"
+}
