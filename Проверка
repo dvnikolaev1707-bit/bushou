@@ -1,0 +1,32 @@
+name: Проверка
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Проверить JSON
+        run: python3 -m json.tool radicals_data.json > /dev/null && echo "JSON валиден"
+
+      - name: Проверить наличие файлов
+        run: |
+          for f in index.html app.js app.css data.js radicals_data.json; do
+            test -f "$f" && echo "$f на месте" || (echo "нет $f" && exit 1)
+          done
+
+      - name: Установить зависимости
+        run: npm ci || npm install
+
+      - name: Прогнать тесты
+        run: npm test
