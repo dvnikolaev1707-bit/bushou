@@ -1,954 +1,219 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bùshǒu 部首 — учись писать иероглифы</title>
+<title>Bùshǒu 部首 — 214 ключей китайского</title>
+<meta name="description" content="Интерактивное приложение для запоминания 214 ключей Канси: анимация черт, обводка, интервальные повторения.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
-<style>
-  :root {
-    --bg: #FAF7F2;
-    --bg-secondary: #F5F1EC;
-    --ink: #2A2420;
-    --ink-light: #5A5550;
-    --accent: #D4503A;
-    --accent-soft: rgba(212, 80, 58, 0.12);
-    --success: #4A9B6D;
-    --success-soft: rgba(74, 155, 109, 0.12);
-    --gold: #C4882A;
-    --gray: #E8E5E0;
-    --gray-dark: #D4CFCA;
-    --radius: 24px;
-  }
-
-  body.dark-mode {
-    --bg: #0D0D0F;
-    --bg-secondary: #141418;
-    --ink: #EDEAE2;
-    --ink-light: #8B8B95;
-    --accent: #E63B2E;
-    --accent-soft: rgba(230, 59, 46, 0.14);
-    --success: #3EB489;
-    --success-soft: rgba(62, 180, 137, 0.14);
-    --gold: #D9A441;
-    --gray: #26262E;
-    --gray-dark: #3A3A44;
-    --radius: 20px;
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  body {
-    background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
-    color: var(--ink);
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 24px;
-    gap: 40px;
-    flex-wrap: wrap;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-
-  .hanzi { font-family: 'Noto Serif SC', serif; }
-  .brush { font-family: 'Ma Shan Zheng', cursive; color: var(--accent); }
-
-  /* ========== ТЕЛЕФОН ========== */
-  .phone {
-    width: 390px;
-    height: 844px;
-    background: var(--bg);
-    border-radius: 48px;
-    border: 12px solid #000;
-    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    position: relative;
-    flex-shrink: 0;
-    transition: background 0.3s ease;
-  }
-
-  .notch {
-    position: absolute;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 28px;
-    background: #000;
-    border-radius: 20px;
-    z-index: 60;
-  }
-
-  .screen {
-    position: absolute;
-    inset: 0;
-    padding: 64px 20px 96px;
-    overflow-y: auto;
-    display: none;
-    scrollbar-width: none;
-  }
-
-  .screen::-webkit-scrollbar { display: none; }
-  .screen.active { display: block; animation: fadeIn 0.35s ease; }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: none; }
-  }
-
-  /* ========== НАВБАР ========== */
-  .nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 84px;
-    z-index: 50;
-    background: rgba(250, 247, 242, 0.95);
-    backdrop-filter: blur(20px);
-    border-top: 1px solid var(--gray);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 14px;
-    transition: background 0.3s ease;
-  }
-
-  body.dark-mode .nav {
-    background: rgba(13, 13, 15, 0.95);
-  }
-
-  .nav button {
-    background: none;
-    border: none;
-    color: var(--ink-light);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    font-family: 'Inter', sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    transition: 0.2s;
-  }
-
-  .nav button .ic { font-size: 22px; line-height: 1; }
-  .nav button.on { color: var(--accent); }
-  .nav button.on .ic { transform: translateY(-2px); }
-
-  /* ========== THEME TOGGLE ========== */
-  .theme-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 44px;
-    height: 44px;
-    background: var(--gray);
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    transition: 0.2s;
-  }
-
-  .theme-toggle:hover { transform: scale(1.05); }
-  .theme-toggle:active { transform: scale(0.95); }
-
-  /* ========== HOME ЭКРАН ========== */
-  .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18px;
-  }
-
-  .logo {
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: -1px;
-  }
-
-  .logo span { color: var(--accent); }
-
-  .streak {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    padding: 8px 14px;
-    border-radius: 99px;
-    font-weight: 700;
-    font-size: 14px;
-  }
-
-  .hero {
-    background: linear-gradient(160deg, var(--bg) 0%, var(--bg-secondary) 100%);
-    border: 1px solid var(--gray);
-    border-radius: var(--radius);
-    padding: 22px;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero::before {
-    content: '部';
-    position: absolute;
-    right: -12px;
-    top: -20px;
-    font-size: 180px;
-    font-family: 'Ma Shan Zheng';
-    color: rgba(212, 80, 58, 0.06);
-    pointer-events: none;
-  }
-
-  body.dark-mode .hero::before {
-    color: rgba(230, 59, 46, 0.07);
-  }
-
-  .hero h2 {
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--ink-light);
-    margin-bottom: 8px;
-  }
-
-  .hero .big {
-    font-size: 28px;
-    font-weight: 900;
-    line-height: 1.15;
-    letter-spacing: -1px;
-    margin-bottom: 12px;
-  }
-
-  .hero .big em { color: var(--success); font-style: normal; font-weight: 900; }
-
-  .bar {
-    height: 6px;
-    background: var(--gray);
-    border-radius: 99px;
-    overflow: hidden;
-  }
-
-  .bar i {
-    display: block;
-    height: 100%;
-    width: 62%;
-    border-radius: 99px;
-    background: linear-gradient(90deg, var(--success), #6DD399);
-  }
-
-  .hero .sub {
-    margin-top: 10px;
-    font-size: 12px;
-    color: var(--ink-light);
-    line-height: 1.4;
-  }
-
-  .cta {
-    width: 100%;
-    padding: 18px;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    background: var(--accent);
-    color: #fff;
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: 0 12px 28px rgba(212, 80, 58, 0.25);
-    margin-bottom: 24px;
-    transition: 0.15s;
-  }
-
-  .cta:active { transform: scale(0.96); }
-
-  .cta small {
-    display: block;
-    font-weight: 500;
-    font-size: 12px;
-    opacity: 0.85;
-    margin-top: 3px;
-  }
-
-  .sect {
-    font-size: 11px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--ink-light);
-    margin: 0 0 14px 2px;
-  }
-
-  /* ========== СЕТКА КЛЮЧЕЙ ========== */
-  .radicals-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-    margin-bottom: 24px;
-  }
-
-  .radical-card {
-    background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
-    border: 1px solid var(--gray);
-    border-radius: 16px;
-    padding: 12px;
-    cursor: pointer;
-    transition: 0.15s;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .radical-card:active { transform: scale(0.94); }
-  .radical-card:hover { border-color: var(--accent); }
-
-  .radical-card .number {
-    font-size: 10px;
-    color: var(--ink-light);
-    font-weight: 700;
-  }
-
-  .radical-card .char {
-    font-size: 32px;
-    font-family: 'Noto Serif SC';
-    color: var(--ink);
-  }
-
-  .radical-card .pinyin {
-    font-size: 9px;
-    color: var(--accent);
-    font-weight: 700;
-  }
-
-  .radical-card.tier-1 { border-color: var(--accent); }
-  .radical-card.tier-2 { border-color: var(--success); }
-  .radical-card.tier-3 { border-color: var(--gold); }
-
-  /* ========== КАРТОЧКА КЛЮЧА ========== */
-  .card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-
-  .back {
-    background: var(--gray);
-    border: none;
-    color: var(--ink);
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.15s;
-  }
-
-  .back:active { transform: scale(0.92); }
-
-  .tier {
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-size: 10px;
-    font-weight: 800;
-    padding: 6px 12px;
-    border-radius: 99px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .writer-wrap {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 8px;
-  }
-
-  #writer {
-    background: linear-gradient(to bottom, var(--bg) 0%, var(--bg-secondary) 100%);
-    border-radius: 24px;
-    border: 1px solid var(--gray);
-    transition: background 0.3s ease;
-  }
-
-  .w-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 12px 0 16px;
-  }
-
-  .chip-btn {
-    background: var(--gray);
-    border: none;
-    color: var(--ink);
-    padding: 10px 16px;
-    border-radius: 99px;
-    font-family: 'Inter';
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.15s;
-  }
-
-  .chip-btn:active { transform: scale(0.92); }
-  .chip-btn.primary { background: var(--accent); border: none; color: #fff; }
-
-  .meaning { text-align: center; margin-bottom: 18px; }
-
-  .meaning .py {
-    font-size: 18px;
-    color: var(--gold);
-    font-weight: 700;
-  }
-
-  .meaning .ru {
-    font-size: 28px;
-    font-weight: 900;
-    color: var(--ink);
-  }
-
-  .meaning .idx {
-    font-size: 11px;
-    color: var(--ink-light);
-    margin-top: 6px;
-  }
-
-  .block {
-    background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
-    border: 1px solid var(--gray);
-    border-radius: var(--radius);
-    padding: 14px;
-    margin-bottom: 12px;
-  }
-
-  .block h4 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--ink-light);
-    margin-bottom: 9px;
-    font-weight: 800;
-  }
-
-  .mnemo {
-    font-size: 13px;
-    line-height: 1.6;
-    color: var(--ink);
-  }
-
-  .mnemo b { color: var(--success); font-weight: 700; }
-
-  .examples {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .ex {
-    background: var(--gray);
-    border: none;
-    border-radius: 12px;
-    padding: 10px 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex: 1;
-    min-width: 90px;
-  }
-
-  .ex .g { font-size: 24px; font-family: 'Noto Serif SC'; color: var(--ink); }
-  .ex .g b { color: var(--accent); font-weight: 700; }
-
-  .ex .t {
-    font-size: 10px;
-    color: var(--ink-light);
-    line-height: 1.3;
-  }
-
-  /* ========== КОЛОДА ========== */
-  .train-head { text-align: center; margin-bottom: 12px; }
-  .train-head .cnt { font-size: 12px; color: var(--ink-light); }
-
-  .dots {
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    margin-top: 8px;
-  }
-
-  .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--gray-dark);
-    transition: 0.2s;
-  }
-
-  .dot.on { background: var(--accent); }
-  .dot.ok { background: var(--success); }
-  .dot.bad { background: var(--gold); }
-
-  .deck {
-    position: relative;
-    height: 420px;
-    margin: 10px 0 16px;
-    perspective: 1000px;
-  }
-
-  .fcard {
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 300px;
-    height: 400px;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 0.5s cubic-bezier(0.4, 1.4, 0.6, 1);
-  }
-
-  .fcard.flipped { transform: rotateY(180deg); }
-
-  .face {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    border-radius: 26px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: linear-gradient(160deg, var(--bg) 0%, var(--bg-secondary) 100%);
-    border: 1px solid var(--gray);
-  }
-
-  .face.back { transform: rotateY(180deg); border-color: var(--success); }
-
-  .face .glyph {
-    font-size: 130px;
-    line-height: 1;
-    font-family: 'Noto Serif SC';
-    color: var(--ink);
-  }
-
-  .face .hint {
-    font-size: 12px;
-    color: var(--ink-light);
-  }
-
-  .face.back .py {
-    font-size: 22px;
-    color: var(--gold);
-    font-weight: 700;
-  }
-
-  .face.back .ru {
-    font-size: 28px;
-    font-weight: 900;
-    color: var(--ink);
-  }
-
-  .face.back .mn {
-    font-size: 11px;
-    color: var(--ink-light);
-    padding: 0 24px;
-    text-align: center;
-    line-height: 1.5;
-    margin-top: 4px;
-  }
-
-  .answers {
-    display: flex;
-    gap: 12px;
-  }
-
-  .ans {
-    flex: 1;
-    padding: 15px;
-    border-radius: 14px;
-    border: 1px solid var(--gray);
-    cursor: pointer;
-    font-family: 'Inter';
-    font-size: 14px;
-    font-weight: 700;
-    transition: 0.15s;
-  }
-
-  .ans:active { transform: scale(0.93); }
-
-  .ans.no { background: var(--gray); color: var(--gold); }
-  .ans.yes { background: var(--success); color: #fff; border-color: var(--success); }
-
-  .stamp-fx {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    opacity: 0;
-    z-index: 5;
-  }
-
-  .stamp-fx .seal {
-    width: 120px;
-    height: 120px;
-    background: var(--accent);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    color: #fff;
-    font-family: 'Ma Shan Zheng';
-    transform: rotate(-8deg);
-    box-shadow: 0 12px 40px rgba(212, 80, 58, 0.35);
-  }
-
-  .stamp-fx.go { animation: stampIn 0.7s ease forwards; }
-
-  @keyframes stampIn {
-    0% { opacity: 0; transform: scale(2.2); }
-    45% { opacity: 1; transform: scale(0.95) rotate(-2deg); }
-    60% { transform: scale(1.02); }
-    80% { opacity: 1; }
-    100% { opacity: 0; transform: scale(1); }
-  }
-
-  .done-msg {
-    text-align: center;
-    padding: 80px 20px;
-    display: none;
-  }
-
-  .done-msg .bamboo { font-size: 60px; margin-bottom: 12px; }
-  .done-msg h3 { font-size: 22px; font-weight: 900; color: var(--ink); margin-bottom: 8px; }
-  .done-msg p { color: var(--ink-light); font-size: 13px; line-height: 1.6; }
-
-  .caption {
-    position: fixed;
-    bottom: 8px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 10px;
-    color: #999;
-    pointer-events: none;
-  }
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
 </head>
 <body>
 
-<button class="theme-toggle" onclick="toggleTheme()" title="Переключить тему">🌓</button>
+<div class="app">
 
-<div class="phone">
-  <div class="notch"></div>
-
-  <!-- ============ HOME ============ -->
-  <div class="screen active" id="scr-home">
-    <div class="top">
-      <div class="logo">Bù<span>shǒu</span></div>
-      <div class="streak">🎋 12</div>
+  <!-- ══════════ СТАРТОВЫЙ ЭКРАН ══════════ -->
+  <section class="view on" id="v-start">
+    <div class="row head">
+      <div>
+        <div class="logo">Bù<b>shǒu</b> 部首</div>
+        <div class="sub">214 ключа китайской письменности</div>
+      </div>
+      <button class="icon-btn" id="theme-btn" title="Сменить тему" aria-label="Сменить тему">◐</button>
     </div>
 
-    <div class="hero">
-      <h2>Твой прогресс</h2>
-      <div class="big">Ты узнаёшь компоненты<br>в <em>62%</em> иероглифов</div>
-      <div class="bar"><i></i></div>
-      <div class="sub">Выучено 47 из 214 ключей · Тир 1 почти закрыт 🔥</div>
-    </div>
-
-    <button class="cta" onclick="go('train')">Колода дня — 8 карточек<small>≈ 4 минуты · интервальное повторение</small></button>
-
-    <div class="sect">Все 214 ключей Канси</div>
-    <div class="radicals-grid" id="radicals-grid"></div>
-  </div>
-
-  <!-- ============ CARD ============ -->
-  <div class="screen" id="scr-card">
-    <div class="card-top">
-      <button class="back" onclick="go('home')">←</button>
-      <div class="tier" id="card-tier">ТИР 1 · №85</div>
-    </div>
-
-    <div class="writer-wrap"><div id="writer"></div></div>
-    <div class="w-actions">
-      <button class="chip-btn primary" onclick="animateChar()">▶ Черты</button>
-      <button class="chip-btn" onclick="quizChar()">✍️ Обвести</button>
-    </div>
-
-    <div class="meaning">
-      <div class="py" id="card-py">shuǐ</div>
-      <div class="ru" id="card-ru">вода</div>
-      <div class="idx" id="card-idx">ключ №85 · 4 черты</div>
-    </div>
-
-    <div class="block">
-      <h4>🧠 Мнемоника</h4>
-      <div class="mnemo" id="card-mnemo">Представь <b>ручей</b>: центральная черта — поток, брызги разлетаются в стороны.</div>
-    </div>
-
-    <div class="block">
-      <h4>🔍 Где живёт этот ключ</h4>
-      <div class="examples" id="card-examples"></div>
-    </div>
-  </div>
-
-  <!-- ============ TRAIN ============ -->
-  <div class="screen" id="scr-train">
-    <div class="train-head">
-      <div class="cnt" id="train-cnt">Карточка 1 из 5</div>
-      <div class="dots" id="dots"></div>
-    </div>
-
-    <div class="deck" id="deck">
-      <div class="fcard" id="fcard" onclick="flipCard()">
-        <div class="face front">
-          <div class="glyph hanzi" id="f-glyph">火</div>
-          <div class="hint">нажми, чтобы перевернуть</div>
+    <div class="box">
+      <h3>Твой прогресс</h3>
+      <div class="ring-wrap">
+        <div class="ring">
+          <svg width="104" height="104" viewBox="0 0 104 104" aria-hidden="true">
+            <circle cx="52" cy="52" r="45" fill="none" stroke="var(--bg2)" stroke-width="10"/>
+            <circle cx="52" cy="52" r="45" fill="none" stroke="var(--accent)" stroke-width="10"
+                    stroke-linecap="round" id="ring-arc" stroke-dasharray="283" stroke-dashoffset="283"/>
+          </svg>
+          <div class="ring-txt"><span id="pct">0%</span><small>выучено</small></div>
         </div>
-        <div class="face back">
-          <div class="py" id="f-py">huǒ</div>
-          <div class="ru" id="f-ru">огонь</div>
-          <div class="mn" id="f-mn">Человечек машет руками у костра</div>
+        <div class="stat-list">
+          <div class="stat"><i style="background:var(--accent)"></i> Выучено <b id="s-learned">0</b></div>
+          <div class="stat"><i style="background:var(--gold)"></i> В работе <b id="s-seen">0</b></div>
+          <div class="stat"><i style="background:var(--line)"></i> Осталось <b id="s-left">214</b></div>
         </div>
       </div>
-      <div class="stamp-fx" id="stamp"><div class="seal" id="stamp-g">火</div></div>
+      <div style="margin-top:16px">
+        <div class="row" style="font-size:12px;color:var(--muted);margin-bottom:6px">
+          <span>Покрытие частотных иероглифов</span><b id="cover">0%</b>
+        </div>
+        <div class="bar"><i id="cover-bar" style="width:0%"></i></div>
+      </div>
     </div>
 
-    <div class="answers" id="answers">
-      <button class="ans no" onclick="answer(false)">Забыл 😅</button>
-      <button class="ans yes" onclick="answer(true)">Помню ✓</button>
+    <div class="box">
+      <h3>По тирам частотности</h3>
+      <div id="tiers"></div>
     </div>
 
-    <div class="done-msg" id="done-msg">
-      <div class="bamboo">🎋</div>
-      <h3>Колода закрыта!</h3>
-      <p>Бамбук подрос — стрик 13 дней.<br>Отличная работа!</p>
-      <button class="cta" style="margin-top:24px" onclick="go('home')">К главному меню →</button>
+    <div class="box">
+      <h3>Статистика</h3>
+      <div class="kpi">
+        <div><b id="k-streak">0</b><span>дней подряд</span></div>
+        <div><b id="k-today">0</b><span>сегодня</span></div>
+        <div><b id="k-total">0</b><span>всего ответов</span></div>
+      </div>
     </div>
-  </div>
 
-  <!-- ============ NAV ============ -->
-  <div class="nav">
-    <button id="nav-home" class="on" onclick="go('home')"><span class="ic">🗺️</span>Свиток</button>
-    <button id="nav-card" onclick="go('card')"><span class="ic">🀄</span>Ключ</button>
-    <button id="nav-train" onclick="go('train')"><span class="ic">⚡</span>Колода</button>
+    <button class="btn" id="btn-train">Тренировка<small id="train-hint">10 карточек по расписанию</small></button>
+    <button class="btn ghost" id="btn-browse">Все 214 ключей</button>
+
+    <div class="box" style="margin-top:14px">
+      <h3>Данные и сброс</h3>
+      <div class="row" style="gap:8px;margin-bottom:10px">
+        <button class="chip" id="btn-export" style="flex:1">↓ Сохранить в файл</button>
+        <button class="chip" id="btn-import" style="flex:1">↑ Загрузить из файла</button>
+      </div>
+      <input type="file" id="file-in" accept="application/json" hidden>
+      <button class="btn ghost" style="margin:0 0 8px" id="btn-soft">Сбросить расписание, оставить выученное</button>
+      <button class="btn danger" style="margin:0" id="btn-reset">Обнулить весь прогресс</button>
+    </div>
+  </section>
+
+  <!-- ══════════ СПИСОК КЛЮЧЕЙ ══════════ -->
+  <section class="view" id="v-browse">
+    <div class="row head">
+      <button class="icon-btn" data-back>←</button>
+      <div style="flex:1">
+        <div class="logo" style="font-size:18px">Все ключи</div>
+        <div class="sub" id="browse-count">—</div>
+      </div>
+      <button class="icon-btn" id="theme-btn2" aria-label="Сменить тему">◐</button>
+    </div>
+
+    <input type="search" id="search" class="search" placeholder="Поиск: shui, вода, 85 или 水" autocomplete="off" aria-label="Поиск по ключам">
+
+    <div class="chips" id="filters">
+      <button class="chip on" data-f="all">Все</button>
+      <button class="chip" data-f="1">Тир 1</button>
+      <button class="chip" data-f="2">Тир 2</button>
+      <button class="chip" data-f="3">Тир 3</button>
+      <button class="chip" data-f="learned">Выучено</button>
+      <button class="chip" data-f="new">Не начато</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="grid-empty" hidden>Ничего не найдено — попробуй другой запрос или сними фильтр</p>
+    <p class="legend">
+      <span><i style="background:var(--accent)"></i> выучено</span>
+      <span><i style="background:var(--gold)"></i> в работе</span>
+      <span><i style="background:var(--line)"></i> не начато</span>
+    </p>
+  </section>
+
+  <!-- ══════════ КАРТОЧКА КЛЮЧА ══════════ -->
+  <section class="view" id="v-card">
+    <div class="row head">
+      <button class="icon-btn" data-back>←</button>
+      <span class="tag" id="c-tier">—</span>
+      <button class="icon-btn" id="c-nav-prev" title="Предыдущий">‹</button>
+      <button class="icon-btn" id="c-nav-next" title="Следующий">›</button>
+    </div>
+
+    <div class="writer-box"><div id="writer"></div></div>
+
+    <div class="row" style="justify-content:center;gap:8px;margin:6px 0 4px">
+      <button class="chip" id="btn-anim">▶ Показать черты</button>
+      <button class="chip" id="btn-quiz">✍ Обвести</button>
+    </div>
+
+    <div class="meta">
+      <div class="py" id="c-py">—</div>
+      <div class="mn" id="c-mean">—</div>
+      <div class="nx" id="c-info">—</div>
+    </div>
+
+    <div class="box">
+      <h3>Мнемоника</h3>
+      <p id="c-mnemo" style="font-size:14px;line-height:1.6">—</p>
+    </div>
+
+    <div class="box">
+      <h3>Встречается в иероглифах</h3>
+      <div class="ex-list" id="c-ex"></div>
+    </div>
+
+    <button class="btn" id="btn-learned">Отметить выученным</button>
+  </section>
+
+  <!-- ══════════ ТРЕНИРОВКА ══════════ -->
+  <section class="view" id="v-train">
+    <div class="row head">
+      <button class="icon-btn" data-back>←</button>
+      <div style="flex:1;text-align:center">
+        <div class="sub" id="t-count">—</div>
+        <div class="dots" id="t-dots"></div>
+      </div>
+      <div style="width:42px"></div>
+    </div>
+
+    <div class="deck" id="t-deck">
+      <div class="flip" id="t-flip">
+        <div class="face">
+          <div class="hz" id="t-glyph" style="font-size:120px;line-height:1">—</div>
+          <div class="hint">нажми, чтобы проверить</div>
+        </div>
+        <div class="face back">
+          <div class="py" id="t-py">—</div>
+          <div class="mean" id="t-mean">—</div>
+          <div class="mnemo" id="t-mnemo">—</div>
+        </div>
+      </div>
+      <div class="stamp" id="t-stamp"><div class="seal hz" id="t-stamp-g">水</div></div>
+    </div>
+
+    <div class="row" style="gap:10px" id="t-actions">
+      <button class="btn ghost" style="margin:0" id="t-no">Не помню</button>
+      <button class="btn" style="margin:0;background:var(--jade)" id="t-yes">Помню</button>
+    </div>
+
+    <div class="done" id="t-done">
+      <div class="big">🎋</div>
+      <h2>Сессия закрыта</h2>
+      <p id="t-summary">—</p>
+      <button class="btn" id="t-again" style="margin-top:20px">Ещё подход</button>
+      <button class="btn ghost" id="t-home">На главную</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════ МОДАЛКА СБРОСА ══════════ -->
+<div class="overlay" id="modal">
+  <div class="sheet">
+    <h2>Обнулить прогресс?</h2>
+    <p>Будут удалены все отметки о выученных ключах, история повторений, серия дней и статистика. Действие необратимо.</p>
+    <div class="row" style="gap:10px">
+      <button class="btn ghost" style="margin:0" id="m-no">Отмена</button>
+      <button class="btn" style="margin:0" id="m-yes">Обнулить</button>
+    </div>
   </div>
 </div>
 
-<div class="caption">Bùshǒu — все 214 ключей Канси · 🌓 переключение тем · интерактивный обучение</div>
+<!-- ══════════ МОДАЛКА МЯГКОГО СБРОСА ══════════ -->
+<div class="overlay" id="modal-soft">
+  <div class="sheet">
+    <h2>Сбросить расписание?</h2>
+    <p>Выученные ключи останутся выученными, но все они вернутся в очередь повторения — как будто пора освежить память. Статистика и серия дней не изменятся.</p>
+    <div class="row" style="gap:10px">
+      <button class="btn ghost" style="margin:0" id="ms-no">Отмена</button>
+      <button class="btn" style="margin:0" id="ms-yes">Сбросить</button>
+    </div>
+  </div>
+</div>
 
-<script>
-// ========== ЗАГРУЗКА ДАННЫХ И ИНИЦИАЛИЗАЦИЯ ==========
-let radicals = [];
-let currentRadical = null;
-let writer = null;
+<div class="toast" id="toast"></div>
 
-// Загружаем данные ключей
-fetch('radicals_data.json')
-  .then(r => r.json())
-  .then(data => {
-    radicals = data;
-    renderRadicals();
-  })
-  .catch(() => {
-    console.log('JSON не найден, используем встроенные данные');
-    // Встроенные данные на случай отсутствия JSON
-    initBuiltinRadicals();
-  });
-
-function initBuiltinRadicals() {
-  radicals = [
-    {num: 1, char: "一", pinyin: "yī", meaning: "один", strokes: 1, tier: 1, mnemonic: "Одна линия", examples: ["二", "三"]},
-    {num: 9, char: "人", pinyin: "rén", meaning: "человек", strokes: 2, tier: 1, mnemonic: "Две ноги, идущий человек", examples: ["从", "众"]},
-    {num: 30, char: "口", pinyin: "kǒu", meaning: "рот", strokes: 3, tier: 1, mnemonic: "Открытый рот", examples: ["吃", "问"]},
-    {num: 32, char: "土", pinyin: "tǔ", meaning: "земля", strokes: 3, tier: 1, mnemonic: "Земля, грунт", examples: ["地", "坐"]},
-    {num: 46, char: "山", pinyin: "shān", meaning: "гора", strokes: 3, tier: 1, mnemonic: "Три пика", examples: ["岩", "岛"]},
-    {num: 61, char: "手", pinyin: "shǒu", meaning: "рука", strokes: 4, tier: 1, mnemonic: "Пять пальцев", examples: ["打", "提"]},
-    {num: 86, char: "火", pinyin: "huǒ", meaning: "огонь", strokes: 4, tier: 1, mnemonic: "Пламя огня", examples: ["炎", "烧"]},
-    {num: 87, char: "水", pinyin: "shuǐ", meaning: "вода", strokes: 4, tier: 1, mnemonic: "Волны воды", examples: ["河", "海"]},
-    {num: 88, char: "木", pinyin: "mù", meaning: "дерево", strokes: 4, tier: 1, mnemonic: "Ствол и ветки", examples: ["树", "林"]},
-  ];
-  renderRadicals();
-}
-
-function renderRadicals() {
-  const grid = document.getElementById('radicals-grid');
-  grid.innerHTML = '';
-  radicals.forEach(r => {
-    const card = document.createElement('div');
-    card.className = `radical-card tier-${r.tier}`;
-    card.innerHTML = `
-      <div class="number">#${r.num}</div>
-      <div class="char hanzi">${r.char}</div>
-      <div class="pinyin">${r.pinyin}</div>
-    `;
-    card.onclick = () => showRadical(r);
-    grid.appendChild(card);
-  });
-}
-
-function showRadical(r) {
-  currentRadical = r;
-  document.getElementById('card-tier').textContent = `ТИР ${r.tier} · №${r.num}`;
-  document.getElementById('card-py').textContent = r.pinyin;
-  document.getElementById('card-ru').textContent = r.meaning;
-  document.getElementById('card-idx').textContent = `ключ №${r.num} · ${r.strokes} черт`;
-  document.getElementById('card-mnemo').textContent = r.mnemonic;
-  
-  const exDiv = document.getElementById('card-examples');
-  exDiv.innerHTML = '';
-  (r.examples || []).forEach((ex, i) => {
-    const el = document.createElement('div');
-    el.className = 'ex';
-    el.innerHTML = `<div class="g hanzi"><b>${r.char}</b>${ex}</div><div class="t">${ex}</div>`;
-    exDiv.appendChild(el);
-  });
-  
-  go('card');
-}
-
-// ========== НАВИГАЦИЯ ==========
-function go(name) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById('scr-' + name).classList.add('active');
-  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('on'));
-  const nb = document.getElementById('nav-' + name);
-  if(nb) nb.classList.add('on');
-  if(name === 'card') initWriter();
-}
-
-// ========== ПЕРЕКЛЮЧЕНИЕ ТЕМ ==========
-function toggleTheme() {
-  document.body.classList.toggle('dark-mode');
-  localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-}
-
-// Загрузить сохранённую тему
-if(localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark-mode');
-}
-
-// ========== HANZI WRITER ==========
-function initWriter() {
-  if(writer || !currentRadical) return;
-  writer = HanziWriter.create('writer', currentRadical.char, {
-    width: 230, height: 230, padding: 18,
-    strokeColor: getComputedStyle(document.documentElement).getPropertyValue('--ink').trim(),
-    outlineColor: getComputedStyle(document.documentElement).getPropertyValue('--gray').trim(),
-    radicalColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(),
-    drawingColor: getComputedStyle(document.documentElement).getPropertyValue('--success').trim(),
-    drawingWidth: 14,
-    strokeAnimationSpeed: 1.2,
-    delayBetweenStrokes: 220,
-    showCharacter: false
-  });
-  setTimeout(() => writer.animateCharacter(), 400);
-}
-
-function animateChar() {
-  if(writer) {
-    writer.cancelQuiz();
-    writer.hideCharacter();
-    writer.animateCharacter();
-  }
-}
-
-function quizChar() {
-  if(!writer) return;
-  writer.hideCharacter();
-  writer.quiz({
-    onComplete: () => { setTimeout(() => writer.animateCharacter(), 600); }
-  });
-}
-
-// ========== КОЛОДА ДНЯ ==========
-const cards = [
-  {g:'火',py:'huǒ',ru:'огонь',mn:'Человечек машет руками у костра'},
-  {g:'木',py:'mù',ru:'дерево',mn:'Ствол с ветками'},
-  {g:'口',py:'kǒu',ru:'рот',mn:'Квадратный рот'},
-  {g:'山',py:'shān',ru:'гора',mn:'Три горных пика'},
-  {g:'心',py:'xīn',ru:'сердце',mn:'Сердце с каплями'}
-];
-let idx = 0, flipped = false;
-
-function buildDots() {
-  const d = document.getElementById('dots');
-  d.innerHTML = '';
-  cards.forEach((_, i) => {
-    const el = document.createElement('div');
-    el.className = 'dot' + (i === 0 ? ' on' : '');
-    el.id = 'dot-' + i;
-    d.appendChild(el);
-  });
-}
-buildDots();
-
-function flipCard() {
-  flipped = !flipped;
-  document.getElementById('fcard').classList.toggle('flipped', flipped);
-}
-
-function answer(ok) {
-  const dot = document.getElementById('dot-' + idx);
-  dot.classList.remove('on');
-  dot.classList.add(ok ? 'ok' : 'bad');
-
-  if(ok) {
-    document.getElementById('stamp-g').textContent = cards[idx].g;
-    const st = document.getElementById('stamp');
-    st.classList.remove('go');
-    void st.offsetWidth;
-    st.classList.add('go');
-    if(navigator.vibrate) navigator.vibrate(30);
-  }
-
-  idx++;
-  if(idx >= cards.length) {
-    setTimeout(() => {
-      document.getElementById('deck').style.display = 'none';
-      document.getElementById('answers').style.display = 'none';
-      document.querySelector('.train-head').style.display = 'none';
-      document.getElementById('done-msg').style.display = 'block';
-    }, ok ? 700 : 150);
-    return;
-  }
-
-  setTimeout(() => {
-    const c = cards[idx];
-    flipped = false;
-    document.getElementById('fcard').classList.remove('flipped');
-    setTimeout(() => {
-      document.getElementById('f-glyph').textContent = c.g;
-      document.getElementById('f-py').textContent = c.py;
-      document.getElementById('f-ru').textContent = c.ru;
-      document.getElementById('f-mn').textContent = c.mn;
-    }, 250);
-    document.getElementById('train-cnt').textContent = 'Карточка ' + (idx+1) + ' из ' + cards.length;
-    document.getElementById('dot-'+idx).classList.add('on');
-  }, ok ? 650 : 150);
-}
-</script>
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

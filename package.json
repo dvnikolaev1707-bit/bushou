@@ -7,7 +7,7 @@
     "start": "python -m http.server 8000",
     "dev": "npx http-server",
     "build": "echo 'No build step required'",
-    "test": "echo 'Tests coming soon'"
+    "test": "node test_app.js"
   },
   "keywords": [
     "chinese",
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/yourusername/bushou/issues"
   },
-  "homepage": "https://yourusername.github.io/bushou"
+  "homepage": "https://yourusername.github.io/bushou",
+  "devDependencies": {
+    "jsdom": "29.1.1"
+  }
 }

@@ -6,7 +6,7 @@
     "meaning": "один",
     "strokes": 1,
     "tier": 1,
-    "mnemonic": "Одна линия, самое простое число",
+    "mnemonic": "Одна черта — начало всего счёта",
     "examples": [
       "二",
       "三",
@@ -16,15 +16,14 @@
   {
     "num": 2,
     "char": "丨",
-    "pinyin": "shù",
-    "meaning": "вертикальная черта",
+    "pinyin": "gǔn",
+    "meaning": "вертикаль",
     "strokes": 1,
     "tier": 1,
-    "mnemonic": "Просто вертикальная линия, стержень",
+    "mnemonic": "Стержень, проткнувший лист сверху вниз",
     "examples": [
       "中",
-      "十",
-      "竹"
+      "丰"
     ]
   },
   {
@@ -33,26 +32,24 @@
     "pinyin": "zhǔ",
     "meaning": "точка",
     "strokes": 1,
-    "tier": 1,
-    "mnemonic": "Одна маленькая точка",
+    "tier": 2,
+    "mnemonic": "Капля туши, упавшая с кисти",
     "examples": [
-      "丸",
       "主",
-      "丹"
+      "丸"
     ]
   },
   {
     "num": 4,
     "char": "丿",
     "pinyin": "piě",
-    "meaning": "косая влево",
+    "meaning": "откидная влево",
     "strokes": 1,
     "tier": 1,
-    "mnemonic": "Наклон влево, как рукав",
+    "mnemonic": "Рукав, свисающий налево",
     "examples": [
       "久",
-      "彳",
-      "廿"
+      "乃"
     ]
   },
   {
@@ -62,24 +59,22 @@
     "meaning": "второй",
     "strokes": 1,
     "tier": 2,
-    "mnemonic": "Закруглённая форма, число два",
+    "mnemonic": "Изогнутая леска — знак «второй»",
     "examples": [
-      "乱",
-      "乙女",
-      "卡"
+      "九",
+      "乞"
     ]
   },
   {
     "num": 6,
     "char": "亅",
-    "pinyin": "gǔn",
-    "meaning": "вертикаль с крючком",
+    "pinyin": "jué",
+    "meaning": "крюк",
     "strokes": 1,
     "tier": 2,
-    "mnemonic": "Палка с загибом в конце",
+    "mnemonic": "Палка с загнутым концом",
     "examples": [
       "了",
-      "亇",
       "予"
     ]
   },
@@ -90,25 +85,23 @@
     "meaning": "два",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Две горизонтальные линии",
+    "mnemonic": "Две горизонтали друг над другом",
     "examples": [
-      "三",
-      "云",
-      "廿"
+      "元",
+      "云"
     ]
   },
   {
     "num": 8,
     "char": "亠",
     "pinyin": "tóu",
-    "meaning": "крыша",
+    "meaning": "крышка",
     "strokes": 2,
-    "tier": 1,
-    "mnemonic": "Крыша дома, защита сверху",
+    "tier": 2,
+    "mnemonic": "Двускатная крыша с трубой",
     "examples": [
-      "亡",
       "京",
-      "六"
+      "交"
     ]
   },
   {
@@ -118,25 +111,25 @@
     "meaning": "человек",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Две ноги, идущий человек",
+    "mnemonic": "Две ноги идущего человека",
     "examples": [
-      "人",
       "从",
-      "众"
+      "众",
+      "他"
     ]
   },
   {
     "num": 10,
     "char": "儿",
     "pinyin": "ér",
-    "meaning": "ребёнок",
+    "meaning": "ноги",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Согнутые колени, маленький человечек",
+    "mnemonic": "Согнутые в коленях детские ножки",
     "examples": [
-      "儿",
       "元",
-      "充"
+      "兄",
+      "先"
     ]
   },
   {
@@ -146,11 +139,10 @@
     "meaning": "входить",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Два потока, вливаются вместе",
+    "mnemonic": "Клин, входящий внутрь",
     "examples": [
-      "入",
-      "全",
-      "八"
+      "内",
+      "全"
     ]
   },
   {
@@ -160,39 +152,37 @@
     "meaning": "восемь",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Две руки, открытые в стороны",
+    "mnemonic": "Две руки, разведённые в стороны",
     "examples": [
-      "八",
+      "分",
       "公",
-      "分"
+      "共"
     ]
   },
   {
     "num": 13,
     "char": "冂",
     "pinyin": "jiōng",
-    "meaning": "коробка",
+    "meaning": "границы",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Замкнутый квадрат, контейнер",
+    "mnemonic": "Открытая снизу рамка — далёкие земли",
     "examples": [
-      "冂",
-      "冃",
-      "冄"
+      "内",
+      "册"
     ]
   },
   {
     "num": 14,
     "char": "冖",
     "pinyin": "mì",
-    "meaning": "крышка",
+    "meaning": "покрывало",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Крышка, покрывающая содержимое",
+    "mnemonic": "Ткань, накинутая сверху",
     "examples": [
-      "冖",
-      "冘",
-      "写"
+      "写",
+      "军"
     ]
   },
   {
@@ -202,39 +192,37 @@
     "meaning": "лёд",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Две льдинки, заморозка",
+    "mnemonic": "Две льдинки на морозе",
     "examples": [
-      "冫",
       "冰",
-      "冷"
+      "冷",
+      "冬"
     ]
   },
   {
     "num": 16,
     "char": "几",
     "pinyin": "jī",
-    "meaning": "стол",
+    "meaning": "столик",
     "strokes": 2,
-    "tier": 1,
-    "mnemonic": "Низкий столик, мебель",
+    "tier": 2,
+    "mnemonic": "Низкий столик на двух ножках",
     "examples": [
-      "几",
       "凡",
-      "凤"
+      "凳"
     ]
   },
   {
     "num": 17,
     "char": "凵",
     "pinyin": "kǎn",
-    "meaning": "пустота",
+    "meaning": "ёмкость",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Открытая яма, пустое место",
+    "mnemonic": "Открытая сверху яма",
     "examples": [
-      "凵",
       "凶",
-      "凷"
+      "击"
     ]
   },
   {
@@ -244,11 +232,11 @@
     "meaning": "нож",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Острый нож, режущий инструмент",
+    "mnemonic": "Клинок с рукоятью",
     "examples": [
-      "刀",
+      "分",
       "切",
-      "制"
+      "刻"
     ]
   },
   {
@@ -258,11 +246,11 @@
     "meaning": "сила",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Мышца, согнутая рука с силой",
+    "mnemonic": "Напряжённая мышца руки",
     "examples": [
-      "力",
       "加",
-      "男"
+      "努",
+      "动"
     ]
   },
   {
@@ -272,11 +260,11 @@
     "meaning": "обхват",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Рука обхватывает, держит",
+    "mnemonic": "Рука, обнимающая содержимое",
     "examples": [
-      "勹",
+      "包",
       "勺",
-      "包"
+      "句"
     ]
   },
   {
@@ -286,39 +274,37 @@
     "meaning": "ложка",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Ложка для еды, утварь",
+    "mnemonic": "Черпак с загнутым краем",
     "examples": [
-      "匕",
-      "匙",
-      "化"
+      "化",
+      "北",
+      "匙"
     ]
   },
   {
     "num": 22,
     "char": "匚",
     "pinyin": "fāng",
-    "meaning": "коробка",
+    "meaning": "ящик",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Квадратный ящик, контейнер",
+    "mnemonic": "Ящик, открытый справа",
     "examples": [
-      "匚",
-      "匜",
-      "匝"
+      "匠",
+      "匹"
     ]
   },
   {
     "num": 23,
     "char": "匸",
-    "pinyin": "xǐ",
-    "meaning": "спрятать",
+    "pinyin": "xì",
+    "meaning": "укрытие",
     "strokes": 2,
-    "tier": 2,
-    "mnemonic": "Скрытое место, укрытие",
+    "tier": 3,
+    "mnemonic": "Тайник, где что-то спрятано",
     "examples": [
-      "匸",
-      "匹",
-      "医"
+      "医",
+      "匿"
     ]
   },
   {
@@ -328,37 +314,37 @@
     "meaning": "десять",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Крест, число десять",
+    "mnemonic": "Скрещённые палочки — десяток",
     "examples": [
-      "十",
-      "土",
-      "干"
+      "千",
+      "升",
+      "古"
     ]
   },
   {
     "num": 25,
     "char": "卜",
-    "pinyin": "bu",
+    "pinyin": "bǔ",
     "meaning": "гадание",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Трещина на костях, знак гадания",
+    "mnemonic": "Трещина на панцире при гадании",
     "examples": [
-      "卜",
       "占",
-      "卡"
+      "卦",
+      "外"
     ]
   },
   {
     "num": 26,
     "char": "卩",
-    "pinyin": "jiè",
+    "pinyin": "jié",
     "meaning": "печать",
     "strokes": 2,
-    "tier": 2,
-    "mnemonic": "Печать, штамп власти",
+    "tier": 1,
+    "mnemonic": "Коленопреклонённый слуга с печатью",
     "examples": [
-      "卩",
+      "印",
       "即",
       "却"
     ]
@@ -367,42 +353,41 @@
     "num": 27,
     "char": "厂",
     "pinyin": "chǎng",
-    "meaning": "фабрика",
+    "meaning": "обрыв",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Крыша фабрики, завода",
+    "mnemonic": "Нависающий скальный навес",
     "examples": [
-      "厂",
       "厅",
-      "厉"
+      "历",
+      "厚"
     ]
   },
   {
     "num": 28,
     "char": "厶",
     "pinyin": "sī",
-    "meaning": "частный",
+    "meaning": "личное",
     "strokes": 2,
     "tier": 2,
-    "mnemonic": "Приватное, личное владение",
+    "mnemonic": "Свёрнутое, закрытое от чужих глаз",
     "examples": [
-      "厶",
       "去",
-      "反"
+      "私"
     ]
   },
   {
     "num": 29,
     "char": "又",
     "pinyin": "yòu",
-    "meaning": "рука",
+    "meaning": "правая рука",
     "strokes": 2,
     "tier": 1,
-    "mnemonic": "Рука с пальцами, захват",
+    "mnemonic": "Кисть с тремя пальцами",
     "examples": [
-      "又",
       "双",
-      "反"
+      "友",
+      "取"
     ]
   },
   {
@@ -412,24 +397,24 @@
     "meaning": "рот",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Открытый рот, квадрат",
+    "mnemonic": "Открытый рот — квадрат",
     "examples": [
-      "口",
       "吃",
-      "问"
+      "叫",
+      "和"
     ]
   },
   {
     "num": 31,
     "char": "囗",
-    "pinyin": "guó",
+    "pinyin": "wéi",
     "meaning": "ограда",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Забор, огороженная площадь",
+    "mnemonic": "Забор по всему периметру",
     "examples": [
-      "囗",
       "四",
+      "回",
       "国"
     ]
   },
@@ -440,10 +425,10 @@
     "meaning": "земля",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Земля, грунт, квадрат с крестом",
+    "mnemonic": "Росток, пробивающий два слоя почвы",
     "examples": [
-      "土",
       "地",
+      "场",
       "坐"
     ]
   },
@@ -451,13 +436,12 @@
     "num": 33,
     "char": "士",
     "pinyin": "shì",
-    "meaning": "воин",
+    "meaning": "муж, воин",
     "strokes": 3,
-    "tier": 1,
-    "mnemonic": "Боец, воин, крест с горизонталью",
+    "tier": 2,
+    "mnemonic": "Тот же росток, но с плечами воина",
     "examples": [
-      "士",
-      "壬",
+      "吉",
       "壮"
     ]
   },
@@ -465,28 +449,26 @@
     "num": 34,
     "char": "夂",
     "pinyin": "zhǐ",
-    "meaning": "идти",
+    "meaning": "идти вслед",
     "strokes": 3,
-    "tier": 2,
-    "mnemonic": "Ноги идут вперёд, движение",
+    "tier": 1,
+    "mnemonic": "Ступни, догоняющие впереди идущего",
     "examples": [
-      "夂",
-      "夆",
-      "处"
+      "冬",
+      "处",
+      "各"
     ]
   },
   {
     "num": 35,
     "char": "夊",
-    "pinyin": "suō",
-    "meaning": "медленно",
+    "pinyin": "suī",
+    "meaning": "медленный шаг",
     "strokes": 3,
     "tier": 2,
-    "mnemonic": "Медленный шаг, прогулка",
+    "mnemonic": "Волочащаяся нога",
     "examples": [
-      "夊",
-      "夋",
-      "夌"
+      "夏"
     ]
   },
   {
@@ -496,10 +478,10 @@
     "meaning": "вечер",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Луна вечером, закат",
+    "mnemonic": "Полумесяц над горизонтом",
     "examples": [
-      "夕",
       "多",
+      "梦",
       "外"
     ]
   },
@@ -510,11 +492,11 @@
     "meaning": "большой",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Человек с раскинутыми руками, большой",
+    "mnemonic": "Человек, раскинувший руки и ноги",
     "examples": [
-      "大",
+      "天",
       "太",
-      "天"
+      "夫"
     ]
   },
   {
@@ -524,25 +506,25 @@
     "meaning": "женщина",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Женщина в реверансе, скромность",
+    "mnemonic": "Фигура в поклоне, руки сложены",
     "examples": [
-      "女",
+      "好",
       "妈",
-      "妹"
+      "她"
     ]
   },
   {
     "num": 39,
     "char": "子",
     "pinyin": "zǐ",
-    "meaning": "сын",
+    "meaning": "ребёнок",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Младенец в колыбели",
+    "mnemonic": "Младенец с большой головой в пелёнках",
     "examples": [
-      "子",
-      "孙",
-      "学"
+      "孩",
+      "字",
+      "孙"
     ]
   },
   {
@@ -552,37 +534,36 @@
     "meaning": "крыша",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Крыша над головой, дом",
+    "mnemonic": "Крыша дома со стенами",
     "examples": [
-      "宀",
       "家",
-      "宅"
+      "安",
+      "字"
     ]
   },
   {
     "num": 41,
     "char": "寸",
     "pinyin": "cùn",
-    "meaning": "дюйм",
+    "meaning": "вершок",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Дюйм на руке, мера длины",
+    "mnemonic": "Рука с меткой у пульса — мера длины",
     "examples": [
-      "寸",
       "对",
-      "寿"
+      "寺",
+      "封"
     ]
   },
   {
     "num": 42,
     "char": "小",
     "pinyin": "xiǎo",
-    "meaning": "малый",
+    "meaning": "маленький",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Три точки, маленькое",
+    "mnemonic": "Три крошечные точки",
     "examples": [
-      "小",
       "少",
       "尖"
     ]
@@ -594,39 +575,36 @@
     "meaning": "хромой",
     "strokes": 3,
     "tier": 2,
-    "mnemonic": "Согнутая нога, паралич",
+    "mnemonic": "Человек с искривлённой ногой",
     "examples": [
-      "尢",
-      "尥",
-      "尤"
+      "尤",
+      "就"
     ]
   },
   {
     "num": 44,
     "char": "尸",
     "pinyin": "shī",
-    "meaning": "труп",
+    "meaning": "тело",
     "strokes": 3,
-    "tier": 2,
-    "mnemonic": "Тело лежит, неживое",
+    "tier": 1,
+    "mnemonic": "Согнутая лежащая фигура",
     "examples": [
-      "尸",
-      "尺",
-      "尻"
+      "尾",
+      "层",
+      "居"
     ]
   },
   {
     "num": 45,
     "char": "屮",
     "pinyin": "chè",
-    "meaning": "трава",
+    "meaning": "росток",
     "strokes": 3,
     "tier": 2,
-    "mnemonic": "Травинка растёт из земли",
+    "mnemonic": "Побег с двумя листочками",
     "examples": [
-      "屮",
-      "屯",
-      "山"
+      "屯"
     ]
   },
   {
@@ -636,11 +614,11 @@
     "meaning": "гора",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Три пика, горный хребет",
+    "mnemonic": "Три пика, средний выше",
     "examples": [
-      "山",
+      "岛",
       "岩",
-      "岛"
+      "峰"
     ]
   },
   {
@@ -649,12 +627,11 @@
     "pinyin": "chuān",
     "meaning": "река",
     "strokes": 3,
-    "tier": 1,
-    "mnemonic": "Три волны, реки текут",
+    "tier": 2,
+    "mnemonic": "Три струи текущей воды",
     "examples": [
-      "巛",
-      "川",
-      "工"
+      "州",
+      "巡"
     ]
   },
   {
@@ -664,11 +641,11 @@
     "meaning": "работа",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Работник строит дом",
+    "mnemonic": "Столярный угольник",
     "examples": [
-      "工",
-      "巩",
-      "左"
+      "左",
+      "巧",
+      "功"
     ]
   },
   {
@@ -677,12 +654,11 @@
     "pinyin": "jǐ",
     "meaning": "сам",
     "strokes": 3,
-    "tier": 1,
-    "mnemonic": "Себя, личность, замкнутый круг",
+    "tier": 2,
+    "mnemonic": "Свёрнутая нить — «своё»",
     "examples": [
-      "己",
-      "巳",
-      "巵"
+      "改",
+      "忌"
     ]
   },
   {
@@ -692,501 +668,480 @@
     "meaning": "полотно",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Кусок ткани, платок",
+    "mnemonic": "Ткань, свисающая с пояса",
     "examples": [
-      "巾",
       "布",
-      "帝"
+      "帽",
+      "带"
     ]
   },
   {
     "num": 51,
     "char": "干",
-    "pinyin": "gàn",
-    "meaning": "стебель",
+    "pinyin": "gān",
+    "meaning": "сухой",
     "strokes": 3,
-    "tier": 1,
-    "mnemonic": "Стебель растения, ствол",
+    "tier": 2,
+    "mnemonic": "Пест, которым толкут насухо",
     "examples": [
-      "干",
-      "年",
-      "平"
+      "刊",
+      "汗"
     ]
   },
   {
     "num": 52,
-    "char": "广",
-    "pinyin": "guǎng",
-    "meaning": "крыша",
+    "char": "幺",
+    "pinyin": "yāo",
+    "meaning": "тонкая нить",
     "strokes": 3,
-    "tier": 1,
-    "mnemonic": "Крыша пещеры, убежище",
+    "tier": 2,
+    "mnemonic": "Крошечный моток шёлка",
     "examples": [
-      "广",
-      "庄",
-      "床"
+      "幼",
+      "幻"
     ]
   },
   {
     "num": 53,
-    "char": "廛",
-    "pinyin": "zhān",
-    "meaning": "лавка",
+    "char": "广",
+    "pinyin": "yǎn",
+    "meaning": "навес",
     "strokes": 3,
-    "tier": 2,
-    "mnemonic": "Магазин в доме",
+    "tier": 1,
+    "mnemonic": "Открытый спереди навес",
     "examples": [
-      "廛",
-      "廜",
-      "廝"
+      "店",
+      "座",
+      "床"
     ]
   },
   {
     "num": 54,
     "char": "廴",
     "pinyin": "yǐn",
-    "meaning": "движение",
+    "meaning": "шаг вперёд",
     "strokes": 3,
-    "tier": 2,
-    "mnemonic": "Ноги идут вперёд, процесс",
+    "tier": 3,
+    "mnemonic": "Вытянутый длинный шаг",
     "examples": [
-      "廴",
-      "廵",
-      "廸"
+      "建",
+      "延"
     ]
   },
   {
     "num": 55,
-    "char": "廿",
-    "pinyin": "niàn",
-    "meaning": "двадцать",
+    "char": "廾",
+    "pinyin": "gǒng",
+    "meaning": "две руки",
     "strokes": 3,
     "tier": 2,
-    "mnemonic": "Два десятка, число 20",
+    "mnemonic": "Две ладони, поднятые вместе",
     "examples": [
-      "廿",
-      "卅",
-      "卆"
+      "开",
+      "弄"
     ]
   },
   {
     "num": 56,
-    "char": "彅",
-    "pinyin": "chì",
-    "meaning": "метла",
+    "char": "弋",
+    "pinyin": "yì",
+    "meaning": "стрелять",
     "strokes": 3,
-    "tier": 2,
-    "mnemonic": "Метла для уборки",
+    "tier": 3,
+    "mnemonic": "Колышек со привязанной стрелой",
     "examples": [
-      "彅",
-      "彆",
-      "彆"
+      "式"
     ]
   },
   {
     "num": 57,
-    "char": "彳",
-    "pinyin": "chì",
-    "meaning": "идти",
+    "char": "弓",
+    "pinyin": "gōng",
+    "meaning": "лук",
     "strokes": 3,
     "tier": 1,
-    "mnemonic": "Человек идёт, три шага",
+    "mnemonic": "Лук с натянутой тетивой",
     "examples": [
-      "彳",
-      "行",
-      "很"
+      "张",
+      "引",
+      "弟"
     ]
   },
   {
     "num": 58,
+    "char": "彐",
+    "pinyin": "jì",
+    "meaning": "рыло",
+    "strokes": 3,
+    "tier": 2,
+    "mnemonic": "Морда зверя в профиль",
+    "examples": [
+      "雪",
+      "寻"
+    ]
+  },
+  {
+    "num": 59,
+    "char": "彡",
+    "pinyin": "shān",
+    "meaning": "волоски",
+    "strokes": 3,
+    "tier": 2,
+    "mnemonic": "Три пряди шерсти",
+    "examples": [
+      "形",
+      "影",
+      "须"
+    ]
+  },
+  {
+    "num": 60,
+    "char": "彳",
+    "pinyin": "chì",
+    "meaning": "шаг",
+    "strokes": 3,
+    "tier": 1,
+    "mnemonic": "Половина знака «идти» — левый шаг",
+    "examples": [
+      "行",
+      "很",
+      "街"
+    ]
+  },
+  {
+    "num": 61,
     "char": "心",
     "pinyin": "xīn",
     "meaning": "сердце",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Сердце с каплями крови",
+    "mnemonic": "Сердце с тремя каплями крови",
     "examples": [
-      "心",
-      "忙",
-      "思"
+      "想",
+      "思",
+      "忙"
     ]
   },
   {
-    "num": 59,
+    "num": 62,
     "char": "戈",
     "pinyin": "gē",
-    "meaning": "алебарда",
+    "meaning": "клевец",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Копьё древнего воина",
+    "mnemonic": "Копьё с боковым лезвием",
     "examples": [
-      "戈",
       "战",
-      "划"
+      "或",
+      "成"
     ]
   },
   {
-    "num": 60,
+    "num": 63,
     "char": "戶",
     "pinyin": "hù",
     "meaning": "дверь",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Дверь, створка входа",
+    "tier": 2,
+    "mnemonic": "Одностворчатая дверь",
     "examples": [
-      "戶",
       "房",
+      "所",
       "扇"
     ]
   },
   {
-    "num": 61,
+    "num": 64,
     "char": "手",
     "pinyin": "shǒu",
     "meaning": "рука",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Рука с пятью пальцами",
+    "mnemonic": "Ладонь с пятью пальцами",
     "examples": [
-      "手",
       "打",
+      "拿",
       "提"
     ]
   },
   {
-    "num": 62,
+    "num": 65,
     "char": "支",
     "pinyin": "zhī",
     "meaning": "ветка",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Ветка дерева",
-    "examples": [
-      "支",
-      "枝",
-      "支"
-    ]
-  },
-  {
-    "num": 63,
-    "char": "攵",
-    "pinyin": "pū",
-    "meaning": "удар",
-    "strokes": 4,
     "tier": 2,
-    "mnemonic": "Взмах рукой, удар",
+    "mnemonic": "Отломанная ветка в руке",
     "examples": [
-      "攵",
-      "教",
-      "政"
-    ]
-  },
-  {
-    "num": 64,
-    "char": "文",
-    "pinyin": "wén",
-    "meaning": "письмо",
-    "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Узор, письмо, документ",
-    "examples": [
-      "文",
-      "文化",
-      "言"
-    ]
-  },
-  {
-    "num": 65,
-    "char": "斗",
-    "pinyin": "dǒu",
-    "meaning": "ковш",
-    "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Ковш для зёрна, сосуд",
-    "examples": [
-      "斗",
-      "斛",
-      "斜"
+      "翅"
     ]
   },
   {
     "num": 66,
-    "char": "斤",
-    "pinyin": "jīn",
-    "meaning": "фунт",
+    "char": "攴",
+    "pinyin": "pū",
+    "meaning": "удар",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Вес, мера, топор",
+    "mnemonic": "Рука, замахнувшаяся палкой",
     "examples": [
-      "斤",
-      "斥",
-      "析"
+      "教",
+      "收",
+      "敢"
     ]
   },
   {
     "num": 67,
-    "char": "斧",
-    "pinyin": "fǔ",
-    "meaning": "топор",
+    "char": "文",
+    "pinyin": "wén",
+    "meaning": "письмо",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Топор для дров",
+    "tier": 2,
+    "mnemonic": "Узор, нанесённый на грудь",
     "examples": [
-      "斧",
-      "斩",
-      "析"
+      "斑",
+      "斐"
     ]
   },
   {
     "num": 68,
-    "char": "斨",
-    "pinyin": "áo",
-    "meaning": "мотыга",
+    "char": "斗",
+    "pinyin": "dǒu",
+    "meaning": "ковш",
     "strokes": 4,
     "tier": 2,
-    "mnemonic": "Мотыга для копания",
+    "mnemonic": "Мерный ковш с ручкой",
     "examples": [
-      "斨",
-      "斩",
-      "斯"
+      "料",
+      "斜"
     ]
   },
   {
     "num": 69,
-    "char": "片",
-    "pinyin": "piàn",
-    "meaning": "обломок",
+    "char": "斤",
+    "pinyin": "jīn",
+    "meaning": "топор",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Кусок, половина, осколок",
+    "mnemonic": "Топор на рукояти",
     "examples": [
-      "片",
-      "版",
-      "牌"
+      "新",
+      "断",
+      "所"
     ]
   },
   {
     "num": 70,
-    "char": "牀",
-    "pinyin": "chuáng",
-    "meaning": "кровать",
+    "char": "方",
+    "pinyin": "fāng",
+    "meaning": "сторона",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Кровать для сна",
+    "mnemonic": "Плуг, задающий направление",
     "examples": [
-      "牀",
-      "床",
-      "卧"
+      "房",
+      "放",
+      "旅"
     ]
   },
   {
     "num": 71,
-    "char": "牛",
-    "pinyin": "niú",
-    "meaning": "корова",
+    "char": "无",
+    "pinyin": "wú",
+    "meaning": "нет",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Рога быка, скот",
+    "tier": 2,
+    "mnemonic": "Человек, у которого ничего не осталось",
     "examples": [
-      "牛",
-      "牧",
-      "特"
+      "既"
     ]
   },
   {
     "num": 72,
-    "char": "犬",
-    "pinyin": "quǎn",
-    "meaning": "собака",
+    "char": "日",
+    "pinyin": "rì",
+    "meaning": "солнце",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Собака с четырьмя лапами",
+    "mnemonic": "Солнечный диск с точкой в центре",
     "examples": [
-      "犬",
-      "犯",
-      "猫"
+      "明",
+      "时",
+      "早"
     ]
   },
   {
     "num": 73,
-    "char": "玄",
-    "pinyin": "xuán",
-    "meaning": "тёмный",
-    "strokes": 5,
+    "char": "曰",
+    "pinyin": "yuē",
+    "meaning": "говорить",
+    "strokes": 4,
     "tier": 2,
-    "mnemonic": "Чёрное, загадочное, скрытое",
+    "mnemonic": "Рот с выходящим изо него словом",
     "examples": [
-      "玄",
-      "玆",
-      "率"
+      "曲",
+      "更",
+      "替"
     ]
   },
   {
     "num": 74,
-    "char": "玉",
-    "pinyin": "yù",
-    "meaning": "нефрит",
-    "strokes": 5,
+    "char": "月",
+    "pinyin": "yuè",
+    "meaning": "луна",
+    "strokes": 4,
     "tier": 1,
-    "mnemonic": "Драгоценный камень, сокровище",
+    "mnemonic": "Серп убывающей луны",
     "examples": [
-      "玉",
-      "王",
-      "玖"
+      "朋",
+      "期",
+      "朗"
     ]
   },
   {
     "num": 75,
-    "char": "瓜",
-    "pinyin": "guā",
-    "meaning": "дыня",
-    "strokes": 5,
+    "char": "木",
+    "pinyin": "mù",
+    "meaning": "дерево",
+    "strokes": 4,
     "tier": 1,
-    "mnemonic": "Дыня на лозе, плод",
+    "mnemonic": "Ствол, ветви и корни",
     "examples": [
-      "瓜",
-      "瓞",
-      "瓢"
+      "树",
+      "林",
+      "桌"
     ]
   },
   {
     "num": 76,
-    "char": "瓞",
-    "pinyin": "dié",
-    "meaning": "маленькая тыква",
-    "strokes": 5,
-    "tier": 2,
-    "mnemonic": "Маленькая тыква, плодик",
+    "char": "欠",
+    "pinyin": "qiàn",
+    "meaning": "зевать",
+    "strokes": 4,
+    "tier": 1,
+    "mnemonic": "Человек с открытым от зевка ртом",
     "examples": [
-      "瓞",
-      "瓢",
-      "瓣"
+      "歌",
+      "次",
+      "欢"
     ]
   },
   {
     "num": 77,
-    "char": "生",
-    "pinyin": "shēng",
-    "meaning": "рождение",
-    "strokes": 5,
+    "char": "止",
+    "pinyin": "zhǐ",
+    "meaning": "стоп",
+    "strokes": 4,
     "tier": 1,
-    "mnemonic": "Росток растения, рождение",
+    "mnemonic": "Отпечаток остановившейся ступни",
     "examples": [
-      "生",
-      "产",
-      "性"
+      "步",
+      "正",
+      "此"
     ]
   },
   {
     "num": 78,
-    "char": "用",
-    "pinyin": "yòng",
-    "meaning": "использовать",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Средство, инструмент",
+    "char": "歹",
+    "pinyin": "dǎi",
+    "meaning": "кости",
+    "strokes": 4,
+    "tier": 2,
+    "mnemonic": "Обглоданные кости — беда",
     "examples": [
-      "用",
-      "功",
-      "运"
+      "死",
+      "残"
     ]
   },
   {
     "num": 79,
-    "char": "田",
-    "pinyin": "tián",
-    "meaning": "поле",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Рисовое поле в сетку",
+    "char": "殳",
+    "pinyin": "shū",
+    "meaning": "булава",
+    "strokes": 4,
+    "tier": 2,
+    "mnemonic": "Рука с боевым молотом",
     "examples": [
-      "田",
-      "畔",
-      "畜"
+      "段",
+      "毁"
     ]
   },
   {
     "num": 80,
-    "char": "皮",
-    "pinyin": "pí",
-    "meaning": "кожа",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Кожа животного, оболочка",
+    "char": "毋",
+    "pinyin": "wú",
+    "meaning": "не надо",
+    "strokes": 4,
+    "tier": 2,
+    "mnemonic": "Женщина с запретительной чертой",
     "examples": [
-      "皮",
-      "皱",
-      "皿"
+      "母",
+      "每"
     ]
   },
   {
     "num": 81,
-    "char": "皿",
-    "pinyin": "mǐn",
-    "meaning": "тарелка",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Чаша для еды, посуда",
+    "char": "比",
+    "pinyin": "bǐ",
+    "meaning": "сравнивать",
+    "strokes": 4,
+    "tier": 2,
+    "mnemonic": "Две ложки рядом — сличаем",
     "examples": [
-      "皿",
-      "盆",
-      "盘"
+      "毕",
+      "毙"
     ]
   },
   {
     "num": 82,
-    "char": "矛",
+    "char": "毛",
     "pinyin": "máo",
-    "meaning": "копьё",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Копьё воина, острие",
+    "meaning": "шерсть",
+    "strokes": 4,
+    "tier": 2,
+    "mnemonic": "Пучок волосков",
     "examples": [
-      "矛",
-      "矜",
-      "矣"
+      "毯",
+      "毫"
     ]
   },
   {
     "num": 83,
-    "char": "矢",
-    "pinyin": "shǐ",
-    "meaning": "стрела",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Стрела лучника, полёт",
+    "char": "氏",
+    "pinyin": "shì",
+    "meaning": "род",
+    "strokes": 4,
+    "tier": 3,
+    "mnemonic": "Знамя семейного клана",
     "examples": [
-      "矢",
-      "知",
-      "短"
+      "民"
     ]
   },
   {
     "num": 84,
-    "char": "石",
-    "pinyin": "shí",
-    "meaning": "камень",
-    "strokes": 5,
-    "tier": 1,
-    "mnemonic": "Скала, каменный, твёрдый",
+    "char": "气",
+    "pinyin": "qì",
+    "meaning": "пар",
+    "strokes": 4,
+    "tier": 2,
+    "mnemonic": "Струйки поднимающегося воздуха",
     "examples": [
-      "石",
-      "砂",
-      "砚"
+      "氧",
+      "氢"
     ]
   },
   {
     "num": 85,
-    "char": "龙",
-    "pinyin": "lóng",
-    "meaning": "дракон",
-    "strokes": 5,
-    "tier": 3,
-    "mnemonic": "Дракон-легендарный зверь",
+    "char": "水",
+    "pinyin": "shuǐ",
+    "meaning": "вода",
+    "strokes": 4,
+    "tier": 1,
+    "mnemonic": "Поток с брызгами по бокам",
     "examples": [
-      "龙",
-      "龍",
-      "龙"
+      "河",
+      "海",
+      "洗"
     ]
   },
   {
@@ -1196,347 +1151,1686 @@
     "meaning": "огонь",
     "strokes": 4,
     "tier": 1,
-    "mnemonic": "Пламя огня, человек у костра",
+    "mnemonic": "Пламя с искрами по сторонам",
     "examples": [
-      "火",
-      "炎",
-      "烧"
+      "烧",
+      "炒",
+      "热"
     ]
   },
   {
     "num": 87,
-    "char": "水",
-    "pinyin": "shuǐ",
-    "meaning": "вода",
+    "char": "爪",
+    "pinyin": "zhǎo",
+    "meaning": "коготь",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Волны воды, три капли",
+    "tier": 2,
+    "mnemonic": "Лапа с загнутыми когтями",
     "examples": [
-      "水",
-      "河",
-      "海"
+      "爬",
+      "采"
     ]
   },
   {
     "num": 88,
-    "char": "木",
-    "pinyin": "mù",
-    "meaning": "дерево",
+    "char": "父",
+    "pinyin": "fù",
+    "meaning": "отец",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Ствол и ветки дерева",
+    "tier": 2,
+    "mnemonic": "Рука с топором — глава семьи",
     "examples": [
-      "木",
-      "树",
-      "林"
+      "爸",
+      "爷"
     ]
   },
   {
     "num": 89,
-    "char": "欠",
-    "pinyin": "qiàn",
-    "meaning": "задолженность",
+    "char": "爻",
+    "pinyin": "yáo",
+    "meaning": "черты гадания",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Зевающий рот, недостаток",
+    "tier": 3,
+    "mnemonic": "Две пары гексаграммных черт",
     "examples": [
-      "欠",
-      "欧",
-      "次"
+      "爽"
     ]
   },
   {
     "num": 90,
-    "char": "止",
-    "pinyin": "zhǐ",
-    "meaning": "останавливаться",
+    "char": "爿",
+    "pinyin": "pán",
+    "meaning": "половина дерева",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Нога, стоп, стоять",
+    "tier": 3,
+    "mnemonic": "Расколотое надвое бревно",
     "examples": [
-      "止",
-      "正",
-      "步"
+      "状"
     ]
   },
   {
     "num": 91,
-    "char": "歹",
-    "pinyin": "dǎi",
-    "meaning": "плохой",
+    "char": "片",
+    "pinyin": "piàn",
+    "meaning": "пластина",
     "strokes": 4,
-    "tier": 1,
-    "mnemonic": "Кость или плохое содержание",
+    "tier": 2,
+    "mnemonic": "Тонкий срез дерева",
     "examples": [
-      "歹",
-      "死",
-      "歼"
+      "版",
+      "牌"
     ]
   },
   {
     "num": 92,
-    "char": "孕",
-    "pinyin": "yùn",
-    "meaning": "беременность",
-    "strokes": 5,
+    "char": "牙",
+    "pinyin": "yá",
+    "meaning": "зуб",
+    "strokes": 4,
     "tier": 2,
-    "mnemonic": "Женщина с ребёнком",
+    "mnemonic": "Torчащий клык",
     "examples": [
-      "孕",
-      "孩",
-      "字"
+      "邪"
     ]
   },
   {
     "num": 93,
-    "char": "末",
-    "pinyin": "mò",
-    "meaning": "конец",
-    "strokes": 5,
+    "char": "牛",
+    "pinyin": "niú",
+    "meaning": "корова",
+    "strokes": 4,
     "tier": 1,
-    "mnemonic": "Вершина дерева, конец",
+    "mnemonic": "Голова быка с рогами",
     "examples": [
-      "末",
-      "梢",
-      "终"
+      "物",
+      "牧",
+      "特"
     ]
   },
   {
     "num": 94,
-    "char": "本",
-    "pinyin": "běn",
-    "meaning": "корень",
-    "strokes": 5,
+    "char": "犬",
+    "pinyin": "quǎn",
+    "meaning": "собака",
+    "strokes": 4,
     "tier": 1,
-    "mnemonic": "Корень дерева, суть",
+    "mnemonic": "Пёс с поднятым хвостом",
     "examples": [
-      "本",
-      "根",
-      "体"
+      "狗",
+      "猫",
+      "猪"
     ]
   },
   {
     "num": 95,
-    "char": "欲",
-    "pinyin": "yù",
-    "meaning": "желание",
-    "strokes": 11,
+    "char": "玄",
+    "pinyin": "xuán",
+    "meaning": "тёмный",
+    "strokes": 5,
     "tier": 2,
-    "mnemonic": "Огонь и пища, желание",
+    "mnemonic": "Скрученная тёмная нить",
     "examples": [
-      "欲",
-      "욕",
-      "愿"
+      "率"
     ]
   },
   {
     "num": 96,
-    "char": "言",
-    "pinyin": "yán",
-    "meaning": "слово",
-    "strokes": 7,
+    "char": "玉",
+    "pinyin": "yù",
+    "meaning": "нефрит",
+    "strokes": 5,
     "tier": 1,
-    "mnemonic": "Человек говорит, язык",
+    "mnemonic": "Три нефритовых диска на шнуре",
     "examples": [
-      "言",
-      "话",
-      "说"
+      "玩",
+      "现",
+      "班"
     ]
   },
   {
     "num": 97,
-    "char": "谷",
-    "pinyin": "gǔ",
-    "meaning": "долина",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Рот реки, впадина",
+    "char": "瓜",
+    "pinyin": "guā",
+    "meaning": "тыква",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Плод на вьющемся стебле",
     "examples": [
-      "谷",
-      "峡",
-      "响"
+      "瓢"
     ]
   },
   {
     "num": 98,
-    "char": "豆",
-    "pinyin": "dòu",
-    "meaning": "боб",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Соевые зёрна, сосуд",
+    "char": "瓦",
+    "pinyin": "wǎ",
+    "meaning": "черепица",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Изогнутая глиняная плитка",
     "examples": [
-      "豆",
-      "豉",
-      "豐"
+      "瓶",
+      "瓷"
     ]
   },
   {
     "num": 99,
-    "char": "豕",
-    "pinyin": "shǐ",
-    "meaning": "свинья",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Свинья с четырьмя копытами",
+    "char": "甘",
+    "pinyin": "gān",
+    "meaning": "сладкий",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Рот с чем-то вкусным внутри",
     "examples": [
-      "豕",
-      "豚",
-      "豪"
+      "甜",
+      "某"
     ]
   },
   {
     "num": 100,
-    "char": "豸",
-    "pinyin": "zhì",
-    "meaning": "животное",
-    "strokes": 7,
+    "char": "生",
+    "pinyin": "shēng",
+    "meaning": "рождаться",
+    "strokes": 5,
     "tier": 2,
-    "mnemonic": "Зверь, четвероногий",
+    "mnemonic": "Росток, вышедший из земли",
     "examples": [
-      "豸",
-      "豹",
-      "豺"
+      "产",
+      "甥"
     ]
   },
   {
     "num": 101,
-    "char": "贝",
-    "pinyin": "bèi",
-    "meaning": "раковина",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Морская раковина, деньги",
+    "char": "用",
+    "pinyin": "yòng",
+    "meaning": "применять",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Ведро, которым пользуются",
     "examples": [
-      "贝",
-      "贝",
-      "货"
+      "甩"
     ]
   },
   {
     "num": 102,
-    "char": "赤",
-    "pinyin": "chì",
-    "meaning": "красный",
-    "strokes": 7,
+    "char": "田",
+    "pinyin": "tián",
+    "meaning": "поле",
+    "strokes": 5,
     "tier": 1,
-    "mnemonic": "Красный, пылающий",
+    "mnemonic": "Надел, разделённый межами",
     "examples": [
-      "赤",
-      "赦",
-      "赫"
+      "男",
+      "界",
+      "畫"
     ]
   },
   {
     "num": 103,
-    "char": "走",
-    "pinyin": "zǒu",
-    "meaning": "идти",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Человек идёт быстро",
+    "char": "疋",
+    "pinyin": "pǐ",
+    "meaning": "отрез ткани",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Мера полотна",
     "examples": [
-      "走",
-      "超",
-      "趣"
+      "疑"
     ]
   },
   {
     "num": 104,
-    "char": "足",
-    "pinyin": "zú",
-    "meaning": "нога",
-    "strokes": 7,
+    "char": "疒",
+    "pinyin": "nè",
+    "meaning": "болезнь",
+    "strokes": 5,
     "tier": 1,
-    "mnemonic": "Ступня с пальцами",
+    "mnemonic": "Человек, лежащий у стены",
     "examples": [
-      "足",
-      "距",
-      "路"
+      "病",
+      "疼",
+      "痛"
     ]
   },
   {
     "num": 105,
-    "char": "身",
-    "pinyin": "shēn",
-    "meaning": "тело",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Беременное тело, туловище",
+    "char": "癶",
+    "pinyin": "bō",
+    "meaning": "шаги врозь",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Две ступни, развёрнутые наружу",
     "examples": [
-      "身",
-      "躲",
-      "躯"
+      "登",
+      "癸"
     ]
   },
   {
     "num": 106,
-    "char": "车",
-    "pinyin": "chē",
-    "meaning": "повозка",
-    "strokes": 4,
+    "char": "白",
+    "pinyin": "bái",
+    "meaning": "белый",
+    "strokes": 5,
     "tier": 1,
-    "mnemonic": "Колесница, транспортное средство",
+    "mnemonic": "Солнце с лучом — яркий свет",
     "examples": [
-      "车",
-      "轮",
-      "轻"
+      "百",
+      "的",
+      "皇"
     ]
   },
   {
     "num": 107,
-    "char": "辛",
-    "pinyin": "xīn",
-    "meaning": "острый",
-    "strokes": 7,
-    "tier": 1,
-    "mnemonic": "Острый перец, острота",
+    "char": "皮",
+    "pinyin": "pí",
+    "meaning": "кожа",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Рука, снимающая шкуру",
     "examples": [
-      "辛",
-      "辞",
-      "辜"
+      "破",
+      "被"
     ]
   },
   {
     "num": 108,
-    "char": "辰",
-    "pinyin": "chén",
-    "meaning": "восток",
-    "strokes": 7,
+    "char": "皿",
+    "pinyin": "mǐn",
+    "meaning": "посуда",
+    "strokes": 5,
     "tier": 1,
-    "mnemonic": "Восходящее солнце, утро",
+    "mnemonic": "Чаша на подставке",
     "examples": [
-      "辰",
-      "晨",
-      "晴"
+      "盘",
+      "盐",
+      "盆"
     ]
   },
   {
     "num": 109,
-    "char": "辵",
-    "pinyin": "chuò",
-    "meaning": "идти",
-    "strokes": 7,
-    "tier": 2,
-    "mnemonic": "Идти вперёд, путь",
+    "char": "目",
+    "pinyin": "mù",
+    "meaning": "глаз",
+    "strokes": 5,
+    "tier": 1,
+    "mnemonic": "Глаз с зрачком, поставленный вертикально",
     "examples": [
-      "辵",
-      "迈",
-      "迁"
+      "看",
+      "眼",
+      "睡"
     ]
   },
   {
     "num": 110,
+    "char": "矛",
+    "pinyin": "máo",
+    "meaning": "копьё",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Древко с наконечником и кистью",
+    "examples": [
+      "柔"
+    ]
+  },
+  {
+    "num": 111,
+    "char": "矢",
+    "pinyin": "shǐ",
+    "meaning": "стрела",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Стрела с оперением",
+    "examples": [
+      "知",
+      "短",
+      "医"
+    ]
+  },
+  {
+    "num": 112,
+    "char": "石",
+    "pinyin": "shí",
+    "meaning": "камень",
+    "strokes": 5,
+    "tier": 1,
+    "mnemonic": "Валун под обрывом",
+    "examples": [
+      "硬",
+      "碗",
+      "破"
+    ]
+  },
+  {
+    "num": 113,
+    "char": "示",
+    "pinyin": "shì",
+    "meaning": "алтарь",
+    "strokes": 5,
+    "tier": 2,
+    "mnemonic": "Жертвенный стол духам",
+    "examples": [
+      "礼",
+      "社",
+      "祝"
+    ]
+  },
+  {
+    "num": 114,
+    "char": "禸",
+    "pinyin": "róu",
+    "meaning": "след",
+    "strokes": 5,
+    "tier": 3,
+    "mnemonic": "Отпечаток лапы зверя",
+    "examples": [
+      "禽"
+    ]
+  },
+  {
+    "num": 115,
+    "char": "禾",
+    "pinyin": "hé",
+    "meaning": "злак",
+    "strokes": 5,
+    "tier": 1,
+    "mnemonic": "Колос, склонённый под весом зерна",
+    "examples": [
+      "和",
+      "秋",
+      "种"
+    ]
+  },
+  {
+    "num": 116,
+    "char": "穴",
+    "pinyin": "xué",
+    "meaning": "пещера",
+    "strokes": 5,
+    "tier": 1,
+    "mnemonic": "Углубление под крышей-навесом",
+    "examples": [
+      "空",
+      "究",
+      "窗"
+    ]
+  },
+  {
+    "num": 117,
+    "char": "立",
+    "pinyin": "lì",
+    "meaning": "стоять",
+    "strokes": 5,
+    "tier": 1,
+    "mnemonic": "Человек, стоящий на земле",
+    "examples": [
+      "站",
+      "位",
+      "亲"
+    ]
+  },
+  {
+    "num": 118,
+    "char": "竹",
+    "pinyin": "zhú",
+    "meaning": "бамбук",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Два стебля с листьями",
+    "examples": [
+      "笑",
+      "笔",
+      "第"
+    ]
+  },
+  {
+    "num": 119,
+    "char": "米",
+    "pinyin": "mǐ",
+    "meaning": "рис",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Зёрна, разлетающиеся от обмолота",
+    "examples": [
+      "粉",
+      "精",
+      "糖"
+    ]
+  },
+  {
+    "num": 120,
+    "char": "糸",
+    "pinyin": "mì",
+    "meaning": "шёлк",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Скрученный шёлковый моток",
+    "examples": [
+      "红",
+      "线",
+      "经"
+    ]
+  },
+  {
+    "num": 121,
+    "char": "缶",
+    "pinyin": "fǒu",
+    "meaning": "глиняный кувшин",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Сосуд с узким горлом",
+    "examples": [
+      "缺",
+      "罐"
+    ]
+  },
+  {
+    "num": 122,
+    "char": "网",
+    "pinyin": "wǎng",
+    "meaning": "сеть",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Плетёная ячеистая снасть",
+    "examples": [
+      "罗",
+      "罚",
+      "置"
+    ]
+  },
+  {
+    "num": 123,
+    "char": "羊",
+    "pinyin": "yáng",
+    "meaning": "овца",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Голова барана с загнутыми рогами",
+    "examples": [
+      "美",
+      "羞",
+      "群"
+    ]
+  },
+  {
+    "num": 124,
+    "char": "羽",
+    "pinyin": "yǔ",
+    "meaning": "перья",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Два крыла с опахалами",
+    "examples": [
+      "翻",
+      "翅"
+    ]
+  },
+  {
+    "num": 125,
+    "char": "老",
+    "pinyin": "lǎo",
+    "meaning": "старый",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Согбенный человек с палкой",
+    "examples": [
+      "考",
+      "孝"
+    ]
+  },
+  {
+    "num": 126,
+    "char": "而",
+    "pinyin": "ér",
+    "meaning": "борода",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Волосы, свисающие с подбородка",
+    "examples": [
+      "耐"
+    ]
+  },
+  {
+    "num": 127,
+    "char": "耒",
+    "pinyin": "lěi",
+    "meaning": "плуг",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Соха с рукоятью",
+    "examples": [
+      "耕"
+    ]
+  },
+  {
+    "num": 128,
+    "char": "耳",
+    "pinyin": "ěr",
+    "meaning": "ухо",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Раковина уха в профиль",
+    "examples": [
+      "听",
+      "聪",
+      "职"
+    ]
+  },
+  {
+    "num": 129,
+    "char": "聿",
+    "pinyin": "yù",
+    "meaning": "кисть",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Рука, держащая писчую кисть",
+    "examples": [
+      "書",
+      "肃"
+    ]
+  },
+  {
+    "num": 130,
+    "char": "肉",
+    "pinyin": "ròu",
+    "meaning": "мясо",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Кусок с прожилками",
+    "examples": [
+      "肚",
+      "胖",
+      "腿"
+    ]
+  },
+  {
+    "num": 131,
+    "char": "臣",
+    "pinyin": "chén",
+    "meaning": "чиновник",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Склонённый глаз слуги перед троном",
+    "examples": [
+      "臥"
+    ]
+  },
+  {
+    "num": 132,
+    "char": "自",
+    "pinyin": "zì",
+    "meaning": "сам",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Собственный нос — указываем на себя",
+    "examples": [
+      "息",
+      "臭"
+    ]
+  },
+  {
+    "num": 133,
+    "char": "至",
+    "pinyin": "zhì",
+    "meaning": "достигать",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Стрела, вонзившаяся в цель",
+    "examples": [
+      "到",
+      "致"
+    ]
+  },
+  {
+    "num": 134,
+    "char": "臼",
+    "pinyin": "jiù",
+    "meaning": "ступа",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Углубление с зубцами внутри",
+    "examples": [
+      "舀"
+    ]
+  },
+  {
+    "num": 135,
+    "char": "舌",
+    "pinyin": "shé",
+    "meaning": "язык",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Язык, высунутый изо рта",
+    "examples": [
+      "甜",
+      "话"
+    ]
+  },
+  {
+    "num": 136,
+    "char": "舛",
+    "pinyin": "chuǎn",
+    "meaning": "вразнобой",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Две ноги, идущие в разные стороны",
+    "examples": [
+      "舞"
+    ]
+  },
+  {
+    "num": 137,
+    "char": "舟",
+    "pinyin": "zhōu",
+    "meaning": "лодка",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Челн с бортами",
+    "examples": [
+      "船",
+      "航",
+      "般"
+    ]
+  },
+  {
+    "num": 138,
+    "char": "艮",
+    "pinyin": "gèn",
+    "meaning": "предел",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Взгляд, упёршийся в стену",
+    "examples": [
+      "良",
+      "即"
+    ]
+  },
+  {
+    "num": 139,
+    "char": "色",
+    "pinyin": "sè",
+    "meaning": "цвет",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Человек и печать — облик, оттенок",
+    "examples": [
+      "艳"
+    ]
+  },
+  {
+    "num": 140,
+    "char": "艸",
+    "pinyin": "cǎo",
+    "meaning": "трава",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Два ростка рядом",
+    "examples": [
+      "花",
+      "草",
+      "茶"
+    ]
+  },
+  {
+    "num": 141,
+    "char": "虍",
+    "pinyin": "hū",
+    "meaning": "тигр",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Полосатая шкура хищника",
+    "examples": [
+      "虎",
+      "虐"
+    ]
+  },
+  {
+    "num": 142,
+    "char": "虫",
+    "pinyin": "chóng",
+    "meaning": "насекомое",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Червячок с головкой",
+    "examples": [
+      "蛇",
+      "蜂",
+      "虾"
+    ]
+  },
+  {
+    "num": 143,
+    "char": "血",
+    "pinyin": "xuè",
+    "meaning": "кровь",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Капля над жертвенной чашей",
+    "examples": [
+      "衆"
+    ]
+  },
+  {
+    "num": 144,
+    "char": "行",
+    "pinyin": "xíng",
+    "meaning": "идти",
+    "strokes": 6,
+    "tier": 2,
+    "mnemonic": "Перекрёсток двух дорог",
+    "examples": [
+      "街",
+      "衛"
+    ]
+  },
+  {
+    "num": 145,
+    "char": "衣",
+    "pinyin": "yī",
+    "meaning": "одежда",
+    "strokes": 6,
+    "tier": 1,
+    "mnemonic": "Халат с воротом и рукавами",
+    "examples": [
+      "初",
+      "裤",
+      "被"
+    ]
+  },
+  {
+    "num": 146,
+    "char": "襾",
+    "pinyin": "yà",
+    "meaning": "накрывать",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Крышка, надетая сверху",
+    "examples": [
+      "要",
+      "覆"
+    ]
+  },
+  {
+    "num": 147,
+    "char": "見",
+    "pinyin": "jiàn",
+    "meaning": "видеть",
+    "strokes": 7,
+    "tier": 1,
+    "mnemonic": "Глаз на ногах — идёт и смотрит",
+    "examples": [
+      "观",
+      "视",
+      "觉"
+    ]
+  },
+  {
+    "num": 148,
+    "char": "角",
+    "pinyin": "jiǎo",
+    "meaning": "рог",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Рог с поперечными кольцами",
+    "examples": [
+      "解",
+      "触"
+    ]
+  },
+  {
+    "num": 149,
+    "char": "言",
+    "pinyin": "yán",
+    "meaning": "речь",
+    "strokes": 7,
+    "tier": 1,
+    "mnemonic": "Рот, из которого выходят звуки",
+    "examples": [
+      "话",
+      "语",
+      "说"
+    ]
+  },
+  {
+    "num": 150,
+    "char": "谷",
+    "pinyin": "gǔ",
+    "meaning": "ущелье",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Расщелина между склонами",
+    "examples": [
+      "欲",
+      "豁"
+    ]
+  },
+  {
+    "num": 151,
+    "char": "豆",
+    "pinyin": "dòu",
+    "meaning": "боб",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Сосуд на ножке — жертвенная посуда",
+    "examples": [
+      "登",
+      "豐"
+    ]
+  },
+  {
+    "num": 152,
+    "char": "豕",
+    "pinyin": "shǐ",
+    "meaning": "свинья",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Кабан с брюхом и щетиной",
+    "examples": [
+      "家",
+      "豬"
+    ]
+  },
+  {
+    "num": 153,
+    "char": "豸",
+    "pinyin": "zhì",
+    "meaning": "зверь",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Хищник с длинной спиной",
+    "examples": [
+      "豹",
+      "貌"
+    ]
+  },
+  {
+    "num": 154,
+    "char": "貝",
+    "pinyin": "bèi",
+    "meaning": "раковина",
+    "strokes": 7,
+    "tier": 1,
+    "mnemonic": "Ракушка-каури — древние деньги",
+    "examples": [
+      "财",
+      "贵",
+      "买"
+    ]
+  },
+  {
+    "num": 155,
+    "char": "赤",
+    "pinyin": "chì",
+    "meaning": "красный",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Огонь под землёй — калёный цвет",
+    "examples": [
+      "赦"
+    ]
+  },
+  {
+    "num": 156,
+    "char": "走",
+    "pinyin": "zǒu",
+    "meaning": "бежать",
+    "strokes": 7,
+    "tier": 1,
+    "mnemonic": "Человек в движении с ногой внизу",
+    "examples": [
+      "起",
+      "超",
+      "越"
+    ]
+  },
+  {
+    "num": 157,
+    "char": "足",
+    "pinyin": "zú",
+    "meaning": "ступня",
+    "strokes": 7,
+    "tier": 1,
+    "mnemonic": "Голень и стопа целиком",
+    "examples": [
+      "跑",
+      "路",
+      "跟"
+    ]
+  },
+  {
+    "num": 158,
+    "char": "身",
+    "pinyin": "shēn",
+    "meaning": "тело",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Профиль беременной фигуры",
+    "examples": [
+      "躺",
+      "射"
+    ]
+  },
+  {
+    "num": 159,
+    "char": "車",
+    "pinyin": "chē",
+    "meaning": "повозка",
+    "strokes": 7,
+    "tier": 1,
+    "mnemonic": "Ось с двумя колёсами сверху",
+    "examples": [
+      "轮",
+      "轻",
+      "辆"
+    ]
+  },
+  {
+    "num": 160,
+    "char": "辛",
+    "pinyin": "xīn",
+    "meaning": "горький",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Клеймо для татуировки — боль",
+    "examples": [
+      "辣",
+      "辦"
+    ]
+  },
+  {
+    "num": 161,
+    "char": "辰",
+    "pinyin": "chén",
+    "meaning": "утро",
+    "strokes": 7,
+    "tier": 2,
+    "mnemonic": "Час пробуждения по календарю",
+    "examples": [
+      "農",
+      "震"
+    ]
+  },
+  {
+    "num": 162,
+    "char": "辵",
+    "pinyin": "chuò",
+    "meaning": "движение",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Дорога и ступня — идти по пути",
+    "examples": [
+      "道",
+      "过",
+      "还"
+    ]
+  },
+  {
+    "num": 163,
     "char": "邑",
     "pinyin": "yì",
     "meaning": "город",
-    "strokes": 7,
+    "strokes": 8,
     "tier": 1,
-    "mnemonic": "Город, поселение, крепость",
+    "mnemonic": "Ограда и коленопреклонённый житель",
     "examples": [
-      "邑",
       "都",
-      "邦"
+      "部",
+      "郊"
+    ]
+  },
+  {
+    "num": 164,
+    "char": "酉",
+    "pinyin": "yǒu",
+    "meaning": "кувшин вина",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Амфора с бродящим вином",
+    "examples": [
+      "酒",
+      "酸",
+      "醒"
+    ]
+  },
+  {
+    "num": 165,
+    "char": "釆",
+    "pinyin": "biàn",
+    "meaning": "различать",
+    "strokes": 8,
+    "tier": 2,
+    "mnemonic": "Рука, разбирающая зёрна",
+    "examples": [
+      "釋"
+    ]
+  },
+  {
+    "num": 166,
+    "char": "里",
+    "pinyin": "lǐ",
+    "meaning": "деревня",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Поле и земля — обжитое место",
+    "examples": [
+      "野",
+      "量",
+      "重"
+    ]
+  },
+  {
+    "num": 167,
+    "char": "金",
+    "pinyin": "jīn",
+    "meaning": "металл",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Слитки в земле под навесом",
+    "examples": [
+      "银",
+      "钱",
+      "铁"
+    ]
+  },
+  {
+    "num": 168,
+    "char": "長",
+    "pinyin": "cháng",
+    "meaning": "длинный",
+    "strokes": 8,
+    "tier": 2,
+    "mnemonic": "Старик с長ными волосами",
+    "examples": [
+      "張",
+      "套"
+    ]
+  },
+  {
+    "num": 169,
+    "char": "門",
+    "pinyin": "mén",
+    "meaning": "врата",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Двустворчатые ворота",
+    "examples": [
+      "问",
+      "间",
+      "闭"
+    ]
+  },
+  {
+    "num": 170,
+    "char": "阜",
+    "pinyin": "fù",
+    "meaning": "холм",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Ступени на склоне насыпи",
+    "examples": [
+      "院",
+      "陈",
+      "阳"
+    ]
+  },
+  {
+    "num": 171,
+    "char": "隶",
+    "pinyin": "dài",
+    "meaning": "подчинённый",
+    "strokes": 8,
+    "tier": 2,
+    "mnemonic": "Рука, схватившая хвост",
+    "examples": [
+      "隸"
+    ]
+  },
+  {
+    "num": 172,
+    "char": "隹",
+    "pinyin": "zhuī",
+    "meaning": "птичка",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Короткохвостая птица",
+    "examples": [
+      "雄",
+      "集",
+      "难"
+    ]
+  },
+  {
+    "num": 173,
+    "char": "雨",
+    "pinyin": "yǔ",
+    "meaning": "дождь",
+    "strokes": 8,
+    "tier": 1,
+    "mnemonic": "Тучи и капли под ними",
+    "examples": [
+      "雪",
+      "雷",
+      "需"
+    ]
+  },
+  {
+    "num": 174,
+    "char": "青",
+    "pinyin": "qīng",
+    "meaning": "лазурный",
+    "strokes": 8,
+    "tier": 2,
+    "mnemonic": "Молодой росток и колодец — свежесть",
+    "examples": [
+      "静",
+      "靖"
+    ]
+  },
+  {
+    "num": 175,
+    "char": "非",
+    "pinyin": "fēi",
+    "meaning": "не так",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Два крыла, направленные врозь",
+    "examples": [
+      "靠",
+      "悲"
+    ]
+  },
+  {
+    "num": 176,
+    "char": "面",
+    "pinyin": "miàn",
+    "meaning": "лицо",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Контур лица с глазом внутри",
+    "examples": [
+      "靦"
+    ]
+  },
+  {
+    "num": 177,
+    "char": "革",
+    "pinyin": "gé",
+    "meaning": "выделанная кожа",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Растянутая на раме шкура",
+    "examples": [
+      "鞋",
+      "鞭"
+    ]
+  },
+  {
+    "num": 178,
+    "char": "韋",
+    "pinyin": "wéi",
+    "meaning": "дублёная кожа",
+    "strokes": 9,
+    "tier": 3,
+    "mnemonic": "Обработанный кожаный ремень",
+    "examples": [
+      "韓",
+      "韌"
+    ]
+  },
+  {
+    "num": 179,
+    "char": "韭",
+    "pinyin": "jiǔ",
+    "meaning": "лук-порей",
+    "strokes": 9,
+    "tier": 3,
+    "mnemonic": "Пучок стеблей на грядке",
+    "examples": [
+      "韮"
+    ]
+  },
+  {
+    "num": 180,
+    "char": "音",
+    "pinyin": "yīn",
+    "meaning": "звук",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Речь с чертой — озвученное слово",
+    "examples": [
+      "響",
+      "韻"
+    ]
+  },
+  {
+    "num": 181,
+    "char": "頁",
+    "pinyin": "yè",
+    "meaning": "голова, страница",
+    "strokes": 9,
+    "tier": 1,
+    "mnemonic": "Голова с лицом и волосами",
+    "examples": [
+      "顺",
+      "颜",
+      "题"
+    ]
+  },
+  {
+    "num": 182,
+    "char": "風",
+    "pinyin": "fēng",
+    "meaning": "ветер",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Насекомое в вихре воздуха",
+    "examples": [
+      "飄",
+      "颱"
+    ]
+  },
+  {
+    "num": 183,
+    "char": "飛",
+    "pinyin": "fēi",
+    "meaning": "летать",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Птица с расправленными крыльями",
+    "examples": [
+      "飜"
+    ]
+  },
+  {
+    "num": 184,
+    "char": "食",
+    "pinyin": "shí",
+    "meaning": "еда",
+    "strokes": 9,
+    "tier": 1,
+    "mnemonic": "Крышка над сосудом с пищей",
+    "examples": [
+      "饭",
+      "饱",
+      "饿"
+    ]
+  },
+  {
+    "num": 185,
+    "char": "首",
+    "pinyin": "shǒu",
+    "meaning": "голова",
+    "strokes": 9,
+    "tier": 2,
+    "mnemonic": "Голова с волосами и глазом",
+    "examples": [
+      "馗"
+    ]
+  },
+  {
+    "num": 186,
+    "char": "香",
+    "pinyin": "xiāng",
+    "meaning": "аромат",
+    "strokes": 10,
+    "tier": 2,
+    "mnemonic": "Злак над сладким — благоухание",
+    "examples": [
+      "馥"
+    ]
+  },
+  {
+    "num": 187,
+    "char": "馬",
+    "pinyin": "mǎ",
+    "meaning": "конь",
+    "strokes": 10,
+    "tier": 1,
+    "mnemonic": "Грива, четыре ноги и хвост",
+    "examples": [
+      "驾",
+      "骑",
+      "验"
+    ]
+  },
+  {
+    "num": 188,
+    "char": "骨",
+    "pinyin": "gǔ",
+    "meaning": "кость",
+    "strokes": 10,
+    "tier": 2,
+    "mnemonic": "Скелетный сустав с плотью",
+    "examples": [
+      "體",
+      "骼"
+    ]
+  },
+  {
+    "num": 189,
+    "char": "高",
+    "pinyin": "gāo",
+    "meaning": "высокий",
+    "strokes": 10,
+    "tier": 3,
+    "mnemonic": "Многоярусная башня",
+    "examples": [
+      "稿",
+      "豪"
+    ]
+  },
+  {
+    "num": 190,
+    "char": "髟",
+    "pinyin": "biāo",
+    "meaning": "длинные волосы",
+    "strokes": 10,
+    "tier": 2,
+    "mnemonic": "Грива поверх головы",
+    "examples": [
+      "髮",
+      "鬍"
+    ]
+  },
+  {
+    "num": 191,
+    "char": "鬥",
+    "pinyin": "dòu",
+    "meaning": "драка",
+    "strokes": 10,
+    "tier": 3,
+    "mnemonic": "Две фигуры, схватившиеся руками",
+    "examples": [
+      "鬧"
+    ]
+  },
+  {
+    "num": 192,
+    "char": "鬯",
+    "pinyin": "chàng",
+    "meaning": "ритуальное вино",
+    "strokes": 10,
+    "tier": 3,
+    "mnemonic": "Сосуд с ароматным настоем",
+    "examples": [
+      "鬱"
+    ]
+  },
+  {
+    "num": 193,
+    "char": "鬲",
+    "pinyin": "lì",
+    "meaning": "котёл-треножник",
+    "strokes": 10,
+    "tier": 3,
+    "mnemonic": "Горшок на трёх ножках",
+    "examples": [
+      "融"
+    ]
+  },
+  {
+    "num": 194,
+    "char": "鬼",
+    "pinyin": "guǐ",
+    "meaning": "дух",
+    "strokes": 11,
+    "tier": 2,
+    "mnemonic": "Голова призрака с завихрением",
+    "examples": [
+      "魂",
+      "魔",
+      "魅"
+    ]
+  },
+  {
+    "num": 195,
+    "char": "魚",
+    "pinyin": "yú",
+    "meaning": "рыба",
+    "strokes": 11,
+    "tier": 1,
+    "mnemonic": "Голова, чешуя и хвост",
+    "examples": [
+      "鮮",
+      "鯨",
+      "鰐"
+    ]
+  },
+  {
+    "num": 196,
+    "char": "鳥",
+    "pinyin": "niǎo",
+    "meaning": "птица",
+    "strokes": 11,
+    "tier": 1,
+    "mnemonic": "Птица с хохолком и хвостом",
+    "examples": [
+      "鳴",
+      "鴨",
+      "鵝"
+    ]
+  },
+  {
+    "num": 197,
+    "char": "鹵",
+    "pinyin": "lǔ",
+    "meaning": "солончак",
+    "strokes": 11,
+    "tier": 2,
+    "mnemonic": "Соль, выступившая на земле",
+    "examples": [
+      "鹹",
+      "鹽"
+    ]
+  },
+  {
+    "num": 198,
+    "char": "鹿",
+    "pinyin": "lù",
+    "meaning": "олень",
+    "strokes": 11,
+    "tier": 3,
+    "mnemonic": "Рога, тело и тонкие ноги",
+    "examples": [
+      "麗",
+      "麓"
+    ]
+  },
+  {
+    "num": 199,
+    "char": "麥",
+    "pinyin": "mài",
+    "meaning": "пшеница",
+    "strokes": 11,
+    "tier": 2,
+    "mnemonic": "Колос с корнями внизу",
+    "examples": [
+      "麵",
+      "麴"
+    ]
+  },
+  {
+    "num": 200,
+    "char": "麻",
+    "pinyin": "má",
+    "meaning": "конопля",
+    "strokes": 12,
+    "tier": 3,
+    "mnemonic": "Стебли, сушащиеся под навесом",
+    "examples": [
+      "摩",
+      "磨"
+    ]
+  },
+  {
+    "num": 201,
+    "char": "黃",
+    "pinyin": "huáng",
+    "meaning": "жёлтый",
+    "strokes": 12,
+    "tier": 2,
+    "mnemonic": "Поле под ярким светом",
+    "examples": [
+      "黌"
+    ]
+  },
+  {
+    "num": 202,
+    "char": "黍",
+    "pinyin": "shǔ",
+    "meaning": "просо",
+    "strokes": 12,
+    "tier": 3,
+    "mnemonic": "Злак и вода — клейкое зерно",
+    "examples": [
+      "黎",
+      "黏"
+    ]
+  },
+  {
+    "num": 203,
+    "char": "黑",
+    "pinyin": "hēi",
+    "meaning": "чёрный",
+    "strokes": 12,
+    "tier": 1,
+    "mnemonic": "Лицо, закопчённое дымом",
+    "examples": [
+      "默",
+      "墨"
+    ]
+  },
+  {
+    "num": 204,
+    "char": "黹",
+    "pinyin": "zhǐ",
+    "meaning": "вышивка",
+    "strokes": 12,
+    "tier": 3,
+    "mnemonic": "Игла, ведущая узор по ткани",
+    "examples": [
+      "黼"
+    ]
+  },
+  {
+    "num": 205,
+    "char": "黽",
+    "pinyin": "mǐn",
+    "meaning": "жаба",
+    "strokes": 13,
+    "tier": 1,
+    "mnemonic": "Лягушка с раздутым животом",
+    "examples": [
+      "鼈",
+      "鼇"
+    ]
+  },
+  {
+    "num": 206,
+    "char": "鼎",
+    "pinyin": "dǐng",
+    "meaning": "ритуальный котёл",
+    "strokes": 13,
+    "tier": 2,
+    "mnemonic": "Тяжёлый треножник власти",
+    "examples": [
+      "鼐"
+    ]
+  },
+  {
+    "num": 207,
+    "char": "鼓",
+    "pinyin": "gǔ",
+    "meaning": "барабан",
+    "strokes": 13,
+    "tier": 2,
+    "mnemonic": "Рука с палочкой у корпуса барабана",
+    "examples": [
+      "鼕"
+    ]
+  },
+  {
+    "num": 208,
+    "char": "鼠",
+    "pinyin": "shǔ",
+    "meaning": "мышь",
+    "strokes": 13,
+    "tier": 3,
+    "mnemonic": "Зубы, лапки и длинный хвост",
+    "examples": [
+      "鼬",
+      "鼯"
+    ]
+  },
+  {
+    "num": 209,
+    "char": "鼻",
+    "pinyin": "bí",
+    "meaning": "нос",
+    "strokes": 13,
+    "tier": 3,
+    "mnemonic": "Нос с пазухами под ним",
+    "examples": [
+      "鼾"
+    ]
+  },
+  {
+    "num": 210,
+    "char": "齊",
+    "pinyin": "qí",
+    "meaning": "ровный",
+    "strokes": 14,
+    "tier": 1,
+    "mnemonic": "Колосья, выровненные по высоте",
+    "examples": [
+      "齋"
+    ]
+  },
+  {
+    "num": 211,
+    "char": "齒",
+    "pinyin": "chǐ",
+    "meaning": "зубы",
+    "strokes": 14,
+    "tier": 3,
+    "mnemonic": "Рот с прорисованными зубами",
+    "examples": [
+      "齡",
+      "齧"
+    ]
+  },
+  {
+    "num": 212,
+    "char": "龍",
+    "pinyin": "lóng",
+    "meaning": "дракон",
+    "strokes": 16,
+    "tier": 2,
+    "mnemonic": "Чешуйчатое тело с гребнем",
+    "examples": [
+      "龕",
+      "襲"
+    ]
+  },
+  {
+    "num": 213,
+    "char": "龜",
+    "pinyin": "guī",
+    "meaning": "черепаха",
+    "strokes": 16,
+    "tier": 2,
+    "mnemonic": "Панцирь, голова и лапы",
+    "examples": [
+      "龜甲"
+    ]
+  },
+  {
+    "num": 214,
+    "char": "龠",
+    "pinyin": "yuè",
+    "meaning": "флейта",
+    "strokes": 17,
+    "tier": 3,
+    "mnemonic": "Многоствольная свирель",
+    "examples": [
+      "籥"
     ]
   }
 ]
